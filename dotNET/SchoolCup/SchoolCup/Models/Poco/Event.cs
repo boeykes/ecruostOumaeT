@@ -8,5 +8,8 @@ namespace SchoolCup.Models.Poco
   public class Event
   {
     public Boolean SchoolCupEvent { get; set; }
+
+      //test thomas
+
   }
 }
