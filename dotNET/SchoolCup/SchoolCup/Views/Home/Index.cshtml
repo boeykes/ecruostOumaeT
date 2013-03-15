@@ -1,4 +1,4 @@
-﻿@model IEnumerable<SchoolCup.Models.POCO.ISF>
+﻿@model IEnumerable<SchoolCup.Models.POCO.Country>
 
 @{
     ViewBag.Title = "Index";
@@ -6,7 +6,9 @@
 
 <h2>Index-SUCCES!!!</h2>
 <ul>
- 
-        <li>@Html.Display(Model. student.Name)</li>
-
+    @foreach (var country in Model)
+    { 
+        <li>@Html.ActionLink(country.Name,"Index")</li>
+       
+    }
 </ul>

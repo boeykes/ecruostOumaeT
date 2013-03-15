@@ -7,18 +7,19 @@ using SchoolCup.Models.DAL;
 
 namespace SchoolCup.Controllers
 {
-    public class HomeController : Controller
+  public class HomeController : Controller
+  {
+    //
+    // GET: /Home/
+
+    private EFDbContext db = new EFDbContext();
+
+    public ActionResult Index()
     {
-        //
-        // GET: /Home/
-
-      private EFDbContext db = new EFDbContext();
-
-        public ActionResult Index()
-        {
-          var isf = db.ISFs.Single("phonenumber");
-          return View(isf);
-        }
+      var countries = db.Countries.ToList();
+      return View(countries);
 
     }
+
+  }
 }

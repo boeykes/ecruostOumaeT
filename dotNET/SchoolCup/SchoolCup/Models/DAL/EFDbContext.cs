@@ -16,11 +16,11 @@ namespace SchoolCup.Models.DAL
       : base("Kdg_Schoolcup_Version01")
     {
     }
-
+ 
     public DbSet<Advertisement> Advertisements { get; set; }
     public DbSet<CoachCoordinator> CoachCoordinators { get; set; }
     public DbSet<Continent> Continents { get; set; }
-    public DbSet<Country> Countrys { get; set; }
+    public DbSet<Country> Countries { get; set; }
     public DbSet<Discipline> Disciplines { get; set; }
     public DbSet<Event> Events { get; set; }
     public DbSet<ISF> ISFs { get; set; }
@@ -40,6 +40,7 @@ namespace SchoolCup.Models.DAL
     protected override void OnModelCreating(DbModelBuilder modelBuilder)
     {
       modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+      modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();  
     }
   }
 }
