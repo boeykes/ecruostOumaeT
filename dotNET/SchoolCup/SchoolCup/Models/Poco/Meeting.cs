@@ -5,11 +5,10 @@ using System.Web;
 
 namespace SchoolCup.Models.Poco
 {
-  public class NSF
+  public class Meeting
   {
     public String Name { get; set; }
-    public int PhoneNumber { get; set; }
-    public int FaxNumber { get; set; }
-    public int YearOfMembership { get; set; }
+    public DateTime Date { get; set; }
+    public String AlbumURL { get; set; }
   }
 }

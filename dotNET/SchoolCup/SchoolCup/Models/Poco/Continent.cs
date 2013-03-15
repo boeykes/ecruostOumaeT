@@ -5,9 +5,8 @@ using System.Web;
 
 namespace SchoolCup.Models.Poco
 {
-  public class ISF
+  public class Continent
   {
-    public int PhoneNumber { get; set; }
-
+    public String Name { get; set; }
   }
 }

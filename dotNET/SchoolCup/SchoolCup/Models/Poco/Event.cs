@@ -5,9 +5,8 @@ using System.Web;
 
 namespace SchoolCup.Models.Poco
 {
-  public class ISF
+  public class Event
   {
-    public int PhoneNumber { get; set; }
-
+    public Boolean SchoolCupEvent { get; set; }
   }
 }
