@@ -23,3 +23,6 @@ D:\KdG\Project\GitHub\TeamOutsource\dotNET\SchoolCup\SchoolCup\bin\System.Web.We
 D:\KdG\Project\GitHub\TeamOutsource\dotNET\SchoolCup\SchoolCup\bin\System.Web.WebPages.Razor.xml
 D:\KdG\Project\GitHub\TeamOutsource\dotNET\SchoolCup\SchoolCup\obj\Debug\SchoolCup.dll
 D:\KdG\Project\GitHub\TeamOutsource\dotNET\SchoolCup\SchoolCup\obj\Debug\SchoolCup.pdb
+D:\KdG\Project\GitHub\TeamOutsource\dotNET\SchoolCup\SchoolCup\bin\EntityFramework.dll
+D:\KdG\Project\GitHub\TeamOutsource\dotNET\SchoolCup\SchoolCup\bin\EntityFramework.xml
+D:\KdG\Project\GitHub\TeamOutsource\dotNET\SchoolCup\SchoolCup\obj\Debug\SchoolCup.csprojResolveAssemblyReference.cache
