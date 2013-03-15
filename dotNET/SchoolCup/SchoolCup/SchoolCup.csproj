@@ -105,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Poco\Advertisement.cs" />
+    <Compile Include="Models\Poco\CoachCoordinator.cs" />
     <Compile Include="Models\Poco\Country.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -113,9 +114,17 @@
     <Compile Include="Models\Poco\Discipline.cs" />
     <Compile Include="Models\Poco\Event.cs" />
     <Compile Include="Models\Poco\ISF.cs" />
+    <Compile Include="Models\Poco\Location.cs" />
     <Compile Include="Models\Poco\Meeting.cs" />
     <Compile Include="Models\Poco\NSF.cs" />
+    <Compile Include="Models\Poco\Record.cs" />
     <Compile Include="Models\Poco\Representative.cs" />
+    <Compile Include="Models\Poco\Result.cs" />
+    <Compile Include="Models\Poco\School.cs" />
+    <Compile Include="Models\Poco\Sport.cs" />
+    <Compile Include="Models\Poco\Student.cs" />
+    <Compile Include="Models\Poco\Subscription.cs" />
+    <Compile Include="Models\Poco\Team.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Poco\Region.cs" />
   </ItemGroup>
