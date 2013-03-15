@@ -9,6 +9,7 @@ namespace SchoolCup.Models.POCO
   {
     public int ISFId { get; set; }
     public int PhoneNumber { get; set; }
+    public String EMail { get; set; }
 
     public List<Advertisement> Advertisements { get; set; }
     public List<NSF> NFSs { get; set; }
