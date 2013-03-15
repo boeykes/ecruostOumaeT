@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name -->
+    <string name="app_name">School Cup</string>
+
+    <!-- Navigation tabs -->
+    <string name="menu_home">Home</string>
+    <string name="menu_myschoolcup">My School Cup</string>
+    <string name="menu_meetings">Meetings</string>
+    <string name="menu_schools">Scholen</string>
+    <string name="menu_photos">Foto\'s</string>
+    <string name="menu_results">Resultaten</string>
+
+    <!-- Menu options -->
+    <string name="options_new_event">Nieuw event</string>
+    <string name="options_settings">Instellingen</string>
+    <string name="options_help">Help</string>
+
+    <!-- Layout setting -->
+    <string name="pref_layout">Self destruct</string>
+    <string name="pref_layout_summ">Deze optie is geheim</string>
+
+    <!-- Theme setting -->
+    <string name="pref_theme">Thema</string>
+    <string name="pref_theme_summ">Wijzig het thema van de applicatie</string>
+    <string name="pref_theme_default">light</string>
+    <string name="pref_theme_dialogtitle">Selecteer het thema</string>
+
+    <!-- Language setting -->
+    <string name="pref_lang">Taal</string>
+    <string name="pref_lang_summ">Wijzig de taal van de applicatie</string>
+    <string name="pref_lang_default">en</string>
+    <string name="pref_lang_dialogtitle">Selecteer uw taal</string>
+</resources>

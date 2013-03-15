@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="pref_layout"
+        android:title="@string/pref_layout"
+        android:summary="@string/pref_layout_summ"
+        android:defaultValue="false" />
+    <ListPreference
+        android:key="pref_theme"
+        android:title="@string/pref_theme"
+        android:summary="@string/pref_theme_summ"
+        android:dialogTitle="@string/pref_theme_dialogtitle"
+        android:entries="@array/pref_theme_entries"
+        android:entryValues="@array/pref_theme_values"
+        android:defaultValue="@string/pref_theme_default" />
+    <ListPreference
+        android:key="pref_lang"
+        android:title="@string/pref_lang"
+        android:summary="@string/pref_lang_summ"
+        android:dialogTitle="@string/pref_lang_dialogtitle"
+        android:entries="@array/pref_lang_entries"
+        android:entryValues="@array/pref_lang_values"
+        android:defaultValue="@string/pref_lang_default" />
+</PreferenceScreen>

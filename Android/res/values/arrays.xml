@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme setting array -->
+    <string-array name="pref_theme_entries">
+        <item>Holo Light</item>
+        <item>Holo Dark</item>
+    </string-array>
+    <string-array name="pref_theme_values">
+        <item>light</item>
+        <item>dark</item>
+    </string-array>
+
+    <!-- Language setting array -->
+    <string-array name="pref_lang_entries">
+        <item>English</item>
+        <item>Dutch</item>
+        <item>French</item>
+    </string-array>
+    <string-array name="pref_lang_values">
+        <item>en</item>
+        <item>nl</item>
+        <item>fr</item>
+    </string-array>
+</resources>
