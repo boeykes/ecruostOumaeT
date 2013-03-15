@@ -14,6 +14,6 @@ namespace SchoolCup.Models.POCO
     public Double MaxTimeDistance { get; set; }
 
     public int SportId { get; set; }
-    public Sport Sport { get; set; }   
+    public virtual Sport Sport { get; set; }   
   }
 }

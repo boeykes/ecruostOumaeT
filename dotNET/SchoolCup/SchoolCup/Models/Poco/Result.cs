@@ -12,10 +12,10 @@ namespace SchoolCup.Models.POCO
     public Int32 Points { get; set; }
 
     public int StudentId { get; set; }
-    public Student Student { get; set; }
+    public virtual Student Student { get; set; }
     public int TeamId { get; set; }
-    public Team Team { get; set; }
+    public virtual Team Team { get; set; }
     public int EventId { get; set; }
-    public Event Event { get; set; }
+    public virtual Event Event { get; set; }
   }
 }

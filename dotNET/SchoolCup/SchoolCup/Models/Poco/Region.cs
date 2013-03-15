@@ -10,9 +10,9 @@ namespace SchoolCup.Models.POCO
     public int RegionId { get; set; }
     public String Name { get; set; }
 
-    public List<Meeting> Meetings { get; set; }
-    public List<School> Schools { get; set; }
+    public virtual List<Meeting> Meetings { get; set; }
+    public virtual List<School> Schools { get; set; }
     public int CountryId { get; set; }
-    public Country Country { get; set; }
+    public virtual Country Country { get; set; }
   }
 }

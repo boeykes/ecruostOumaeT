@@ -10,7 +10,7 @@ namespace SchoolCup.Models.POCO
     public int SportId { get; set; }
     public String Type { get; set; }
 
-    public List<Discipline> Disciplines { get; set; }
-    public List<Team> Teams { get; set; }
+    public virtual List<Discipline> Disciplines { get; set; }
+    public virtual List<Team> Teams { get; set; }
   }
 }

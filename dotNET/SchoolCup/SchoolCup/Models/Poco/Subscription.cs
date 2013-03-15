@@ -11,8 +11,8 @@ namespace SchoolCup.Models.POCO
     public DateTime Date { get; set; }
 
     public int TeamId { get; set; }
-    public Team Team { get; set; }
+    public virtual Team Team { get; set; }
     public int MeetingId { get; set; }
-    public Meeting Meeting { get; set; }
+    public virtual Meeting Meeting { get; set; }
   }
 }

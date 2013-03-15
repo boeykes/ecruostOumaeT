@@ -14,9 +14,9 @@ namespace SchoolCup.Models.POCO
     public String LogoURL { get; set; }
 
     public int ISFId { get; set; }
-    public ISF ISF { get; set; }
-    public List<Continent> Continents { get; set; }
-    public List<Country> Countries { get; set; }
-    public List<Sport> Sports { get; set; }
+    public virtual ISF ISF { get; set; }
+    public virtual List<Continent> Continents { get; set; }
+    public virtual List<Country> Countries { get; set; }
+    public virtual List<Sport> Sports { get; set; }
   }
 }

@@ -11,7 +11,7 @@ namespace SchoolCup.Models.POCO
     public Boolean SchoolCupEvent { get; set; }
 
     public int DisciplineId { get; set; }
-    public Discipline Discipline { get; set; }
-    public List<Result> Results { get; set; }
+    public virtual Discipline Discipline { get; set; }
+    public virtual List<Result> Results { get; set; }
   }
 }

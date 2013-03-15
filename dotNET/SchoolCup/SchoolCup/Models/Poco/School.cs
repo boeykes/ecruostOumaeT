@@ -14,15 +14,15 @@ namespace SchoolCup.Models.POCO
     public String WebsiteURL { get; set; }
 
     public int LocationId { get; set; }
-    public Location Location { get; set; }
+    public virtual Location Location { get; set; }
     public int NSFId { get; set; }
-    public NSF NSF { get; set; }
+    public virtual NSF NSF { get; set; }
     public int RegionId { get; set; }
-    public Region Region { get; set; }
-    public List<Student> Students { get; set; }
-    public List<Team> Teams { get; set; }
+    public virtual Region Region { get; set; }
+    public virtual List<Student> Students { get; set; }
+    public virtual List<Team> Teams { get; set; }
     public int CoachCoordinatorId { get; set; }                           //voor coordinator
-    public CoachCoordinator CoachCoordinator { get; set; }                //voor coach
-    public List<CoachCoordinator> CoachCoordinators { get; set; }
+    public virtual CoachCoordinator CoachCoordinator { get; set; }                //voor coach
+    public virtual List<CoachCoordinator> CoachCoordinators { get; set; }
   }
 }

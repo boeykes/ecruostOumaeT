@@ -13,12 +13,12 @@ namespace SchoolCup.Models.POCO
     public String AlbumURL { get; set; }
 
     public int RegionId { get; set; }
-    public Region Region { get; set; }
+    public virtual Region Region { get; set; }
     public int LocationId { get; set; }
-    public Location Location { get; set; }
+    public virtual Location Location { get; set; }
     public int StudentId { get; set; }
-    public Student Student { get; set; }
-    public List<Subscription> Subscriptions { get; set; }
-    public List<Event> Events { get; set; }
+    public virtual Student Student { get; set; }
+    public virtual List<Subscription> Subscriptions { get; set; }
+    public virtual List<Event> Events { get; set; }
   }
 }

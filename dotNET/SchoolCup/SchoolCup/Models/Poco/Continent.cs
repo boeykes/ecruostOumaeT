@@ -10,6 +10,6 @@ namespace SchoolCup.Models.POCO
     public int ContinentId { get; set; }
     public String Name { get; set; }
 
-    public List<Country> Countries { get; set; }
+    public virtual List<Country> Countries { get; set; }
   }
 }

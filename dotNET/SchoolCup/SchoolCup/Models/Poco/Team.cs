@@ -13,13 +13,13 @@ namespace SchoolCup.Models.POCO
     public String LogoURL { get; set; }
 
     public int SchoolId { get; set; }
-    public School School { get; set; }
+    public virtual School School { get; set; }
     public int CoachCoordinatorId { get; set; }
-    public CoachCoordinator CoachCoordinator { get; set; }
-    public List<Student> Students { get; set; }
-    public List<Subscription> Subscriptions { get; set; }
-    public List<Result> Results { get; set; }
+    public virtual CoachCoordinator CoachCoordinator { get; set; }
+    public virtual List<Student> Students { get; set; }
+    public virtual List<Subscription> Subscriptions { get; set; }
+    public virtual List<Result> Results { get; set; }
     public int SportId { get; set; }
-    public Sport Sport { get; set; }
+    public virtual Sport Sport { get; set; }
   }
 }

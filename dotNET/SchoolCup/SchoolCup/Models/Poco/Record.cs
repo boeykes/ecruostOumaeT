@@ -15,6 +15,6 @@ namespace SchoolCup.Models.POCO
     public Double TimeDistance { get; set; }
     public String Kind { get; set; }
 
-    public List<Discipline> Disciplines { get; set; }
+    public virtual List<Discipline> Disciplines { get; set; }
   }
 }
