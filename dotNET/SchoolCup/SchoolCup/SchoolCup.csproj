@@ -104,29 +104,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Poco\Advertisement.cs" />
-    <Compile Include="Models\Poco\CoachCoordinator.cs" />
-    <Compile Include="Models\Poco\Country.cs" />
+    <Compile Include="Models\POCO\Advertisement.cs" />
+    <Compile Include="Models\POCO\CoachCoordinator.cs" />
+    <Compile Include="Models\POCO\Country.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Poco\Continent.cs" />
-    <Compile Include="Models\Poco\Discipline.cs" />
-    <Compile Include="Models\Poco\Event.cs" />
-    <Compile Include="Models\Poco\ISF.cs" />
-    <Compile Include="Models\Poco\Location.cs" />
-    <Compile Include="Models\Poco\Meeting.cs" />
-    <Compile Include="Models\Poco\NSF.cs" />
-    <Compile Include="Models\Poco\Record.cs" />
-    <Compile Include="Models\Poco\Representative.cs" />
-    <Compile Include="Models\Poco\Result.cs" />
-    <Compile Include="Models\Poco\School.cs" />
-    <Compile Include="Models\Poco\Sport.cs" />
-    <Compile Include="Models\Poco\Student.cs" />
-    <Compile Include="Models\Poco\Subscription.cs" />
-    <Compile Include="Models\Poco\Team.cs" />
+    <Compile Include="Models\POCO\Continent.cs" />
+    <Compile Include="Models\POCO\Discipline.cs" />
+    <Compile Include="Models\POCO\Event.cs" />
+    <Compile Include="Models\POCO\ISF.cs" />
+    <Compile Include="Models\POCO\Location.cs" />
+    <Compile Include="Models\POCO\Meeting.cs" />
+    <Compile Include="Models\POCO\NSF.cs" />
+    <Compile Include="Models\POCO\Record.cs" />
+    <Compile Include="Models\POCO\Representative.cs" />
+    <Compile Include="Models\POCO\Result.cs" />
+    <Compile Include="Models\POCO\School.cs" />
+    <Compile Include="Models\POCO\Sport.cs" />
+    <Compile Include="Models\POCO\Student.cs" />
+    <Compile Include="Models\POCO\Subscription.cs" />
+    <Compile Include="Models\POCO\Team.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Models\Poco\Region.cs" />
+    <Compile Include="Models\POCO\Region.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -148,6 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClassDiagram1.cd" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
