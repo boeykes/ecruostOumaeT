@@ -5,7 +5,7 @@ using System.Web;
 
 namespace SchoolCup.Models.Poco
 {
-  public class ISF
+  public class NSF
   {
   }
 }
