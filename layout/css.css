@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color: #F0F0F0;
 }
 
 #wrappertop{
@@ -33,7 +33,7 @@ body{
 
 #header{
     height: 150px;
-    background-image:url('headertest.png');
+    background-image:url("./Images/banner1.png");
     background-size:100% 100%;
     background-repeat:no-repeat;
 }
