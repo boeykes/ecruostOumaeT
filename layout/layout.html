@@ -6,13 +6,36 @@
     <link rel="stylesheet" href="css.css"
           type="text/css"
             />
+    <script type="text/javascript" src="scripts.js"></script>
 </head>
 <body>
 
     <div id="wrappertop">
     <div id="header">
-        <img id = "headerimg" src="headertest.png" alt="header" />
-
+        <div id="left">
+            <input type="text" VALUE="Login" name="name"  onblur="onBlur(this)" onfocus="onFocus(this)">
+            <input type="text" VALUE="Password" name="password"  onblur="onBlur(this)" onfocus="onFocus(this)">
+            <a href="" >?</a>
+            <button>Login</button>
+        </div>
+        <!--<div id="leftLoggedin">-->
+            <!--<img alt="gebruiker" src="logo%20isf.jpg">-->
+            <!--Welcome Jos-->
+            <!--<a href="">Change Profile</a>-->
+            <!--<a href="">Manage Results</a>-->
+            <!--<a href="">Log Out</a>-->
+        <!--</div>-->
+        <div id="right">
+            <select>
+                <option value="volvo">Language</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+            <input type="text" name="search" VALUE="Search" onblur="onBlur(this)" onfocus="onFocus(this)">
+            <button>Go</button>
+        </div>
+    </div>
 
     <ul id="navigatie">
         <li><a href="index.html">Home</a></li>
@@ -36,7 +59,6 @@
         </li>
 
     </ul>
-    </div>
     </div>
     <div id=wrapper>
     <div id="content">

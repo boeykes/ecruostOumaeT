@@ -31,10 +31,83 @@ body{
     border-style: solid;
 }
 
-#headerimg{
-    margin-left: auto;
-    margin-right: auto;
+#header{
+    height: 150px;
+    background-image:url('headertest.png');
+    background-size:100% 100%;
+    background-repeat:no-repeat;
 }
+
+#left{
+    float:left;
+    padding-top: 30px;
+    padding-left: 20px;
+    align : right;
+}
+
+#left input{
+    display:block;
+    margin-top: 10px;
+    width: 100px;
+}
+
+#left button{
+    width: 92px;
+}
+
+#leftLoggedin{
+    float:left;
+    padding-top: 20px;
+    padding-left: 20px;
+    width:200px;
+    align : right;
+    color: white;
+    font-weight: bold;
+}
+
+#leftLoggedin img{
+    float:left;
+    width: 90px;
+    height: 90px;
+    padding-right: 10px;
+}
+
+#leftLoggedin a{
+    font-weight: normal;
+    display:block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#right{
+    float: right;
+    margin-right: 10px;
+    position: relative; bottom: 10; right: 10;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+#right select{
+     display:block;
+     margin-top: -25px;
+     width: 120px;
+ }
+
+#right input{
+    float: left;
+    display:block;
+    margin-top: 70px;
+    width: 90px;
+}
+
+#right button{
+    float: left;
+    display:block;
+    margin-top: 70px;
+    width: 30px;
+}
+
+
 
 #drop-down-menu{margin-left:20px}
 ul{
