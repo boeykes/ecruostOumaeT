@@ -36,12 +36,15 @@ ul{
     font-weight:bold;color:#ffffff;
     margin:0;
     padding:0;
-    list-style:none}
+    list-style:none ;
+    margin-left:-1px;
+    margin-right:-2px;
+}
 ul li{
     display:block;
     position:relative;
     float:left;
-    width: 137px;}
+    width: 137.57px;}
 
 li ul{display:none}
 
