@@ -25,6 +25,7 @@ namespace SchoolCup.Models.DAL
     public DbSet<Event> Events { get; set; }
     public DbSet<ISF> ISFs { get; set; }
     public DbSet<Location> Locations { get; set; }
+    public DbSet<Student> Students { get; set; }
     public DbSet<Meeting> Meetings { get; set; }
     public DbSet<NSF> NSFs { get; set; }
     public DbSet<Record> Records { get; set; }
@@ -33,14 +34,19 @@ namespace SchoolCup.Models.DAL
     public DbSet<Result> Results { get; set; }
     public DbSet<School> Schools { get; set; }
     public DbSet<Sport> Sports { get; set; }
-    public DbSet<Student> Students { get; set; }
+    
     public DbSet<Subscription> Subscriptions { get; set; }
     public DbSet<Team> Teams { get; set; }
 
     protected override void OnModelCreating(DbModelBuilder modelBuilder)
     {
       modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-      modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();  
+      modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
+     /* modelBuilder.Entity<Meeting>()
+        .HasRequired(s => s.Student)
+        .WithMany(m => m.Meetings)
+        .HasForeignKey(s => s.StudentId)
+        .WillCascadeOnDelete(false);*/
     }
   }
 }

@@ -13,7 +13,7 @@ namespace SchoolCup.Models.POCO
     public String Mobile { get; set; }
     public String EMail { get; set; }
 
-    public int LocationId { get; set; }
+    public int? LocationId { get; set; }
     public virtual Location Location { get; set; }
     public int SchoolId { get; set; }
     public virtual School School { get; set; }

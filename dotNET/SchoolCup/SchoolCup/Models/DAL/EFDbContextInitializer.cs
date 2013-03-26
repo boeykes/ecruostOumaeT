@@ -31,16 +31,14 @@ namespace SchoolCup.Models.DAL
 
       #region ISF
       
-      ISF isf = new ISF{PhoneNumber = "+3232860738"};
-      context.ISFs.Add(isf);
-
+      ISF isf = new ISF{PhoneNumber = "+3232860738", Records = new List<Record>(), Advertisements = new List<Advertisement>(), NFSs = new List<NSF>()};
+    
       #endregion
       #region Sport
 
-      Sport athletiek = new Sport{Type = "Athletiek"};
-      Sport swimming = new Sport{Type = "Swimming"};
-      context.Sports.Add(athletiek);
-      context.Sports.Add(swimming);
+      Sport athletiek = new Sport{Type = "Athletiek", Disciplines = new List<Discipline>(),Teams = new List<Team>()};
+      Sport swimming = new Sport { Type = "Swimming", Disciplines = new List<Discipline>(), Teams = new List<Team>() };
+    
 
       #endregion
       #region Discipline
@@ -51,47 +49,36 @@ namespace SchoolCup.Models.DAL
       Discipline discipline4 = new Discipline { IsTime = true, MinTimeDistance = 10, MaxTimeDistance = 60, Name = "Discipline4" };
       Discipline discipline5 = new Discipline { IsTime = true, MinTimeDistance = 10, MaxTimeDistance = 60, Name = "Discipline5" };
       Discipline discipline6 = new Discipline { IsTime = true, MinTimeDistance = 10, MaxTimeDistance = 60, Name = "Discipline6" };
-      context.Disciplines.Add(discipline1);
-      context.Disciplines.Add(discipline2);
-      context.Disciplines.Add(discipline3);
-      context.Disciplines.Add(discipline4);
-      context.Disciplines.Add(discipline5);
-      context.Disciplines.Add(discipline6);
+     
 
       #endregion
       #region Record
 
       Record record = new Record {Name = "Record1",DateObtained = new DateTime(2012,10,25), DateOfBirth = new DateTime(1982,12,25), Gender = 'M', Kind = "Schoolcup", TimeDistance = 20};
-      context.Records.Add(record);
+   
 
       #endregion
       #region Continent
 
-      Continent continent = new Continent{Name = "Europe"};
-      context.Continents.Add(continent);
+      Continent continent = new Continent{Name = "Europe", Countries = new List<Country>()};
+   
 
       #endregion
       #region Country
 
-      Country country1 = new Country {Name = "Belgium"};
-      Country country2 = new Country {Name = "France" };
-      context.Countries.Add(country1);
-      context.Countries.Add(country2);
+      Country country1 = new Country {Name = "Belgium", Regions = new List<Region>()};
+      Country country2 = new Country { Name = "France", Regions = new List<Region>() };
+    
 
       #endregion
       #region Region
 
-      Region region1 = new Region{Name = "Oost-Vlaanderen"};
-      Region region2 = new Region {Name = "West-Vlaanderen"};
-      Region region3 = new Region { Name = "Antwerpen" };
-      Region region4 = new Region { Name = "Vlaams-Brabant" };
-      Region region5 = new Region { Name = "Limburg" };
-      context.Regions.Add(region1);
-      context.Regions.Add(region2);
-      context.Regions.Add(region3);
-      context.Regions.Add(region4);
-      context.Regions.Add(region5);
-
+      Region region1 = new Region{Name = "Oost-Vlaanderen", Meetings = new List<Meeting>(), Schools = new List<School>()};
+      Region region2 = new Region { Name = "West-Vlaanderen", Meetings = new List<Meeting>(), Schools = new List<School>() };
+      Region region3 = new Region { Name = "Antwerpen", Meetings = new List<Meeting>(), Schools = new List<School>() };
+      Region region4 = new Region { Name = "Vlaams-Brabant", Meetings = new List<Meeting>(), Schools = new List<School>() };
+      Region region5 = new Region { Name = "Limburg", Meetings = new List<Meeting>(), Schools = new List<School>() };
+    
       #endregion
       #region Location
 
@@ -124,142 +111,107 @@ namespace SchoolCup.Models.DAL
       Location location27 = new Location { Street = "location27Street", HomeNumber = "27", ZipCode = "27", City = "Location27" };
       Location location28 = new Location { Street = "location28Street", HomeNumber = "28", ZipCode = "28", City = "Location28" };
       Location location29 = new Location { Street = "location29Street", HomeNumber = "29", ZipCode = "29", City = "Location29" };
-      context.Locations.Add(location1);
-      context.Locations.Add(location2);
-      context.Locations.Add(location3);
-      context.Locations.Add(location4);
-      context.Locations.Add(location5);
-      context.Locations.Add(location6);
-      context.Locations.Add(location7);
-      context.Locations.Add(location8);
-      context.Locations.Add(location9);
-      context.Locations.Add(location10);
-      context.Locations.Add(location11);
-      context.Locations.Add(location12);
-      context.Locations.Add(location13);
-      context.Locations.Add(location14);
-      context.Locations.Add(location15);
-      context.Locations.Add(location16);
-      context.Locations.Add(location17);
-      context.Locations.Add(location18);
-      context.Locations.Add(location19);
-      context.Locations.Add(location20);
-      context.Locations.Add(location21);
-      context.Locations.Add(location22);
-      context.Locations.Add(location23);
-      context.Locations.Add(location24);
-      context.Locations.Add(location25);
-      context.Locations.Add(location26);
-      context.Locations.Add(location27);
-      context.Locations.Add(location28);
-      context.Locations.Add(location29);
-
+    
       #endregion
       #region Advertisement
 
-      Advertisement advertisement1 = new Advertisement{Name = "ad1", StartDate = new DateTime(2013,01,10), EndDate = new DateTime(2013,05,10)};
-      Advertisement advertisement2 = new Advertisement { Name = "ad1", StartDate = new DateTime(2013, 02, 01), EndDate = new DateTime(2013, 07, 06) };
-      context.Advertisements.Add(advertisement1);
-      context.Advertisements.Add(advertisement2);
+      Advertisement advertisement1 = new Advertisement{Name = "ad1", StartDate = new DateTime(2013,01,10), EndDate = new DateTime(2013,05,10), 
+        Continents = new List<Continent>(), Countries = new List<Country>(), Sports = new List<Sport>()};
+      Advertisement advertisement2 = new Advertisement { Name = "ad1", StartDate = new DateTime(2013, 02, 01), EndDate = new DateTime(2013, 07, 06), 
+        Continents = new List<Continent>(), Countries = new List<Country>(), Sports = new List<Sport>()};
 
       #endregion
-      #region NSF
+      #region Representative
 
       Representative representative1 = new Representative { Name = "representative1", Function = "Vertegenwoordiger", Email = "representative1@schoolcup.org" };
       Representative representative2 = new Representative { Name = "representative2", Function = "Vertegenwoordiger", Email = "representative2@schoolcup.org" };
-      context.Representatives.Add(representative1);
-      context.Representatives.Add(representative2);
+    
 
       #endregion
       #region NSF
 
-      NSF nsf1 = new NSF{FaxNumber = "037707045",Name = "NSF1", PhoneNumber = "037707045", YearOfMembership = 2012};
-      NSF nsf2 = new NSF { FaxNumber = "031547865", Name = "NSF2", PhoneNumber = "031512865", YearOfMembership = 2011 };
-      context.NSFs.Add(nsf1);
-      context.NSFs.Add(nsf2);
+      NSF nsf1 = new NSF{FaxNumber = "037707045",Name = "NSF1", PhoneNumber = "037707045", YearOfMembership = 2012, Regions = new List<Region>(), Schools = new List<School>()};
+      NSF nsf2 = new NSF { FaxNumber = "031547865", Name = "NSF2", PhoneNumber = "031512865", YearOfMembership = 2011, Regions = new List<Region>(), Schools = new List<School>() };
+     
 
       #endregion
       #region School
 
-      School school1 = new School {Name = "KdG Groenplaats",WebsiteURL = "http://www.kdg.be", EMail = "info@kdg.be",Phone = "037701285"};
-      School school2 = new School { Name = "KU Leuven", WebsiteURL = "http://www.kuleuven.be/kuleuven/", EMail = "info@kuleuven.be", Phone = "075149621" };
-      context.Schools.Add(school1);
-      context.Schools.Add(school2);
+      School school1 = new School {Name = "KdG Groenplaats",WebsiteURL = "http://www.kdg.be", EMail = "info@kdg.be",Phone = "037701285", 
+        Students = new List<Student>(), Teams = new List<Team>()};
+      School school2 = new School { Name = "KU Leuven", WebsiteURL = "http://www.kuleuven.be/kuleuven/", EMail = "info@kuleuven.be", Phone = "075149621", 
+        Students = new List<Student>(), Teams = new List<Team>()};
+      
 
       #endregion
       #region Coordinatior
 
-      CoachCoordinator coordinator1 = new CoachCoordinator { Name = "coordinator1", Phone = "0345872318", EMail = "coordinator1@school1.be", Mobile = "0425123548" };
-      CoachCoordinator coordinator2 = new CoachCoordinator { Name = "coordinator2", Phone = "0345876254", EMail = "coordinator2@school2.be", Mobile = "0412578965" };
-      context.CoachCoordinators.Add(coordinator1);
-      context.CoachCoordinators.Add(coordinator2);
+      CoachCoordinator coordinator1 = new CoachCoordinator { Name = "coordinator1", Phone = "0345872318", EMail = "coordinator1@school1.be", Mobile = "0425123548", 
+        Schools = new List<School>(), Teams = new List<Team>()};
+      CoachCoordinator coordinator2 = new CoachCoordinator { Name = "coordinator2", Phone = "0345876254", EMail = "coordinator2@school2.be", Mobile = "0412578965",
+        Schools = new List<School>(), Teams = new List<Team>()};
+      
 
       #endregion
       #region Coach
 
-      CoachCoordinator coach1 = new CoachCoordinator { Name = "coach1", Phone = "034578621", EMail = "coach1@school1.be", Mobile = "0423548521" };
-      CoachCoordinator coach2 = new CoachCoordinator { Name = "coach2", Phone = "035412365", EMail = "coach2@school1.be", Mobile = "0412547896" };
-      CoachCoordinator coach3 = new CoachCoordinator { Name = "coach3", Phone = "032147896", EMail = "coach3@school1.be", Mobile = "0445621305" };
-      CoachCoordinator coach4 = new CoachCoordinator { Name = "coach4", Phone = "032564789", EMail = "coach4@school2.be", Mobile = "0423451489" };
-      context.CoachCoordinators.Add(coach1);
-      context.CoachCoordinators.Add(coach2);
-      context.CoachCoordinators.Add(coach3);
-      context.CoachCoordinators.Add(coach4);
-
+      CoachCoordinator coach1 = new CoachCoordinator { Name = "coach1", Phone = "034578621", EMail = "coach1@school1.be", Mobile = "0423548521", 
+        Schools = new List<School>(), Teams = new List<Team>()};
+      CoachCoordinator coach2 = new CoachCoordinator { Name = "coach2", Phone = "035412365", EMail = "coach2@school1.be", Mobile = "0412547896", 
+        Schools = new List<School>(), Teams = new List<Team>()};
+      CoachCoordinator coach3 = new CoachCoordinator { Name = "coach3", Phone = "032147896", EMail = "coach3@school1.be", Mobile = "0445621305", 
+        Schools = new List<School>(), Teams = new List<Team>() };
+      CoachCoordinator coach4 = new CoachCoordinator { Name = "coach4", Phone = "032564789", EMail = "coach4@school2.be", Mobile = "0423451489", 
+        Schools = new List<School>(), Teams = new List<Team>() };
+    
       #endregion
       #region Team
 
-      Team team1 = new Team {Name = "Team1"};
-      Team team2 = new Team { Name = "Team2" };
-      Team team3 = new Team { Name = "Team3" };
-      Team team4 = new Team { Name = "Team4" };
-      context.Teams.Add(team1);
-      context.Teams.Add(team2);
-      context.Teams.Add(team3);
-      context.Teams.Add(team4);
-
+      Team team1 = new Team {Name = "Team1", Results = new List<Result>(), Students = new List<Student>(), Subscriptions = new List<Subscription>()};
+      Team team2 = new Team { Name = "Team2", Results = new List<Result>(), Students = new List<Student>(), Subscriptions = new List<Subscription>() };
+      Team team3 = new Team { Name = "Team3", Results = new List<Result>(), Students = new List<Student>(), Subscriptions = new List<Subscription>() };
+      Team team4 = new Team { Name = "Team4", Results = new List<Result>(), Students = new List<Student>(), Subscriptions = new List<Subscription>() };
+    
       #endregion
       #region Student
 
-      Student student11 = new Student { Name = "student11", DateOfBirth = new DateTime(1993, 04, 25), Gender = 'M', EMail = "student11@student.school1.be"};
-      Student student12 = new Student { Name = "student12", DateOfBirth = new DateTime(1993, 04, 25), Gender = 'M', EMail = "student12@student.school1.be" };
-      Student student13 = new Student { Name = "student13", DateOfBirth = new DateTime(1993, 05, 05), Gender = 'M', EMail = "student13@student.school1.be" };
-      Student student14 = new Student { Name = "student14", DateOfBirth = new DateTime(1993, 06, 25), Gender = 'M', EMail = "student14@student.school1.be" };
+      Student student11 = new Student { Name = "student11", DateOfBirth = new DateTime(1993, 04, 25), Gender = 'M', EMail = "student11@student.school1.be", 
+       Teams = new List<Team>() };
+      Student student12 = new Student { Name = "student12", DateOfBirth = new DateTime(1993, 04, 25), Gender = 'M', EMail = "student12@student.school1.be", 
+        Teams = new List<Team>() };
+      Student student13 = new Student { Name = "student13", DateOfBirth = new DateTime(1993, 05, 05), Gender = 'M', EMail = "student13@student.school1.be", 
+         Teams = new List<Team>() };
+      Student student14 = new Student { Name = "student14", DateOfBirth = new DateTime(1993, 06, 25), Gender = 'M', EMail = "student14@student.school1.be", 
+        Teams = new List<Team>()  };
 
-      Student student21 = new Student { Name = "student21", DateOfBirth = new DateTime(1993, 07, 25), Gender = 'V', EMail = "student21@student.school1.be" };
-      Student student22 = new Student { Name = "student22", DateOfBirth = new DateTime(1993, 08, 25), Gender = 'V', EMail = "student22@student.school1.be" };
-      Student student23 = new Student { Name = "student23", DateOfBirth = new DateTime(1993, 09, 25), Gender = 'V', EMail = "student23@student.school1.be" };
-      Student student24 = new Student { Name = "student24", DateOfBirth = new DateTime(1993, 04, 24), Gender = 'V', EMail = "student24@student.school1.be" };
+      Student student21 = new Student { Name = "student21", DateOfBirth = new DateTime(1993, 07, 25), Gender = 'V', EMail = "student21@student.school1.be", 
+         Teams = new List<Team>() };
+      Student student22 = new Student { Name = "student22", DateOfBirth = new DateTime(1993, 08, 25), Gender = 'V', EMail = "student22@student.school1.be", 
+         Teams = new List<Team>() };
+      Student student23 = new Student { Name = "student23", DateOfBirth = new DateTime(1993, 09, 25), Gender = 'V', EMail = "student23@student.school1.be", 
+         Teams = new List<Team>() };
+      Student student24 = new Student { Name = "student24", DateOfBirth = new DateTime(1993, 04, 24), Gender = 'V', EMail = "student24@student.school1.be", 
+        Teams = new List<Team>() };
 
-      Student student31 = new Student { Name = "student31", DateOfBirth = new DateTime(1993, 04, 23), Gender = 'V', EMail = "student31@student.school2.be" };
-      Student student32 = new Student { Name = "student32", DateOfBirth = new DateTime(1993, 04, 12), Gender = 'V', EMail = "student32@student.school2.be" };
-      Student student33 = new Student { Name = "student33", DateOfBirth = new DateTime(1993, 04, 15), Gender = 'V', EMail = "student33@student.school2.be" };
-      Student student34 = new Student { Name = "student34", DateOfBirth = new DateTime(1993, 04, 17), Gender = 'V', EMail = "student34@student.school2.be" };
+      Student student31 = new Student { Name = "student31", DateOfBirth = new DateTime(1993, 04, 23), Gender = 'V', EMail = "student31@student.school2.be", 
+        Teams = new List<Team>() };
+      Student student32 = new Student { Name = "student32", DateOfBirth = new DateTime(1993, 04, 12), Gender = 'V', EMail = "student32@student.school2.be", 
+        Teams = new List<Team>() };
+      Student student33 = new Student { Name = "student33", DateOfBirth = new DateTime(1993, 04, 15), Gender = 'V', EMail = "student33@student.school2.be", 
+         Teams = new List<Team>()};
+      Student student34 = new Student { Name = "student34", DateOfBirth = new DateTime(1993, 04, 17), Gender = 'V', EMail = "student34@student.school2.be", 
+        Teams = new List<Team>() };
 
-      Student student41 = new Student { Name = "student41", DateOfBirth = new DateTime(1993, 04, 01), Gender = 'M', EMail = "student41@student.school2.be" };
-      Student student42 = new Student { Name = "student42", DateOfBirth = new DateTime(1993, 04, 03), Gender = 'M', EMail = "student42@student.school2.be" };
-      Student student43 = new Student { Name = "student43", DateOfBirth = new DateTime(1993, 04, 05), Gender = 'M', EMail = "student43@student.school2.be" };
-      Student student44 = new Student { Name = "student44", DateOfBirth = new DateTime(1993, 04, 07), Gender = 'M', EMail = "student44@student.school2.be" };
+      Student student41 = new Student { Name = "student41", DateOfBirth = new DateTime(1993, 04, 01), Gender = 'M', EMail = "student41@student.school2.be", 
+         Teams = new List<Team>()  };
+      Student student42 = new Student { Name = "student42", DateOfBirth = new DateTime(1993, 04, 03), Gender = 'M', EMail = "student42@student.school2.be", 
+         Teams = new List<Team>()  };
+      Student student43 = new Student { Name = "student43", DateOfBirth = new DateTime(1993, 04, 05), Gender = 'M', EMail = "student43@student.school2.be", 
+        Teams = new List<Team>() };
+      Student student44 = new Student { Name = "student44", DateOfBirth = new DateTime(1993, 04, 07), Gender = 'M', EMail = "student44@student.school2.be", 
+        Teams = new List<Team>()  };
 
-      context.Students.Add(student11);
-      context.Students.Add(student12);
-      context.Students.Add(student13);
-      context.Students.Add(student14);
-
-      context.Students.Add(student21);
-      context.Students.Add(student22);
-      context.Students.Add(student23);
-      context.Students.Add(student24);
-
-      context.Students.Add(student31);
-      context.Students.Add(student32);
-      context.Students.Add(student33);
-      context.Students.Add(student34);
-
-      context.Students.Add(student41);
-      context.Students.Add(student42);
-      context.Students.Add(student43);
-      context.Students.Add(student44);
+  
 
       #endregion
       #region Subscription
@@ -270,45 +222,29 @@ namespace SchoolCup.Models.DAL
       Subscription subscription4 = new Subscription { Date = new DateTime(2013, 01, 13) };
       Subscription subscription5 = new Subscription { Date = new DateTime(2013, 01, 14) };
       Subscription subscription6 = new Subscription { Date = new DateTime(2013, 01, 15) };
-      context.Subscriptions.Add(subscription1);
-      context.Subscriptions.Add(subscription2);
-      context.Subscriptions.Add(subscription3);
-      context.Subscriptions.Add(subscription4);
-      context.Subscriptions.Add(subscription5);
-      context.Subscriptions.Add(subscription6);
+    
 
       #endregion
       #region Meeting
 
-      Meeting meeting1 = new Meeting{Name = "meeting1", Date = new DateTime(2013,02,20)};
-      Meeting meeting2 = new Meeting { Name = "meeting2", Date = new DateTime(2013, 02, 21) };
-      Meeting meeting3 = new Meeting {Name = "meeting3", Date = new DateTime(2013, 02, 22)};
-      context.Meetings.Add(meeting1);
-      context.Meetings.Add(meeting2);
-      context.Meetings.Add(meeting3);
+      Meeting meeting1 = new Meeting{Name = "meeting1", Date = new DateTime(2013,02,20), Events = new List<Event>(), Subscriptions = new List<Subscription>()};
+      Meeting meeting2 = new Meeting { Name = "meeting2", Date = new DateTime(2013, 02, 21), Events = new List<Event>(), Subscriptions = new List<Subscription>() };
+      Meeting meeting3 = new Meeting { Name = "meeting3", Date = new DateTime(2013, 02, 22), Events = new List<Event>(), Subscriptions = new List<Subscription>() };
+     
 
       #endregion
       #region Event
 
-      Event event1 = new Event{SchoolCupEvent = false};
-      Event event2 = new Event { SchoolCupEvent = false };
-      Event event3 = new Event { SchoolCupEvent = false };
-      Event event4 = new Event { SchoolCupEvent = false };
-      Event event5 = new Event { SchoolCupEvent = false };
-      Event event6 = new Event { SchoolCupEvent = false };
-      Event event7 = new Event { SchoolCupEvent = false };
-      Event event8 = new Event { SchoolCupEvent = false };
-      Event event9 = new Event { SchoolCupEvent = false };
-      context.Events.Add(event1);
-      context.Events.Add(event2);
-      context.Events.Add(event3);
-      context.Events.Add(event4);
-      context.Events.Add(event5);
-      context.Events.Add(event6);
-      context.Events.Add(event7);
-      context.Events.Add(event8);
-      context.Events.Add(event9);
-
+      Event event1 = new Event{SchoolCupEvent = false, Results = new List<Result>()};
+      Event event2 = new Event { SchoolCupEvent = false, Results = new List<Result>() };
+      Event event3 = new Event { SchoolCupEvent = false, Results = new List<Result>() };
+      Event event4 = new Event { SchoolCupEvent = false, Results = new List<Result>() };
+      Event event5 = new Event { SchoolCupEvent = false, Results = new List<Result>() };
+      Event event6 = new Event { SchoolCupEvent = false, Results = new List<Result>() };
+      Event event7 = new Event { SchoolCupEvent = false, Results = new List<Result>() };
+      Event event8 = new Event { SchoolCupEvent = false, Results = new List<Result>() };
+      Event event9 = new Event { SchoolCupEvent = false, Results = new List<Result>() };
+     
       #endregion
       #region Result
 
@@ -330,27 +266,12 @@ namespace SchoolCup.Models.DAL
       Result result16 = new Result { TimeDistance = 22.3, Points = 74 };
       Result result17 = new Result { TimeDistance = 22.4, Points = 75 };
       Result result18 = new Result { TimeDistance = 22.5, Points = 76 };
-      context.Results.Add(result1);
-      context.Results.Add(result2);
-      context.Results.Add(result3);
-      context.Results.Add(result4);
-      context.Results.Add(result5);
-      context.Results.Add(result6);
-      context.Results.Add(result7);
-      context.Results.Add(result8);
-      context.Results.Add(result9);
-      context.Results.Add(result10);
-      context.Results.Add(result11);
-      context.Results.Add(result12);
-      context.Results.Add(result13);
-      context.Results.Add(result14);
-      context.Results.Add(result15);
-      context.Results.Add(result16);
-      context.Results.Add(result17);
-      context.Results.Add(result18);
+     
 
       #endregion
 
+
+      
       /*
        * ===================
        * Creation relations
@@ -405,7 +326,60 @@ namespace SchoolCup.Models.DAL
       location4.Country = country1;
       location5.Country = country1;
       location6.Country = country1;
-
+      location7.Country = country1;
+      location8.Country = country1;
+      location9.Country = country1;
+      location10.Country = country1;
+      location11.Country = country1;
+      location12.Country = country1;
+      location13.Country = country1;
+      location14.Country = country1;
+      location15.Country = country1;
+      location16.Country = country1;
+      location17.Country = country1;
+      location18.Country = country1;
+      location19.Country = country1;
+      location20.Country = country1;
+      location21.Country = country1;
+      location22.Country = country1;
+      location23.Country = country1;
+      location24.Country = country1;
+      location25.Country = country1;
+      location26.Country = country1;
+      location27.Country = country1;
+      location28.Country = country1;
+      location29.Country = country1;
+      
+      //Location -> Region
+      location1.Region = region1;
+      location2.Region = region1;
+      location3.Region = region1;
+      location4.Region = region1;
+      location5.Region = region2;
+      location6.Region = region2;
+      location7.Region = region2;
+      location8.Region = region2;
+      location9.Region = region3;
+      location10.Region = region3;
+      location11.Region = region3;
+      location12.Region = region3;
+      location13.Region = region3;
+      location14.Region = region3;
+      location15.Region = region3;
+      location16.Region = region3;
+      location17.Region = region4;
+      location18.Region = region4;
+      location19.Region = region4;
+      location20.Region = region4;
+      location21.Region = region4;
+      location22.Region = region4;
+      location23.Region = region5;
+      location24.Region = region5;
+      location25.Region = region5;
+      location26.Region = region5;
+      location27.Region = region5;
+      location28.Region = region5;
+      location29.Region = region5;
       #endregion
       #region Continent
 
@@ -605,10 +579,10 @@ namespace SchoolCup.Models.DAL
 
       //Team -> subscription
       team1.Subscriptions.Add(subscription1);
-      team1.Subscriptions.Add(subscription5);
-      team2.Subscriptions.Add(subscription2);
-      team3.Subscriptions.Add(subscription3);
-      team4.Subscriptions.Add(subscription4);
+      team1.Subscriptions.Add(subscription2);
+      team2.Subscriptions.Add(subscription3);
+      team3.Subscriptions.Add(subscription4);
+      team4.Subscriptions.Add(subscription5);
       team4.Subscriptions.Add(subscription6);
 
       //Team -> results
@@ -865,6 +839,229 @@ namespace SchoolCup.Models.DAL
       advertisement2.Sports.Add(swimming);
 
       #endregion
+
+
+      /*
+       * ==========================================
+       * Saving to context
+       * ==========================================
+       */
+
+      #region ISF
+
+      context.ISFs.Add(isf);
+
+      #endregion
+      #region Sport
+  
+      context.Sports.Add(athletiek);
+      context.Sports.Add(swimming);
+
+      #endregion
+      #region Discipline
+
+      context.Disciplines.Add(discipline1);
+      context.Disciplines.Add(discipline2);
+      context.Disciplines.Add(discipline3);
+      context.Disciplines.Add(discipline4);
+      context.Disciplines.Add(discipline5);
+      context.Disciplines.Add(discipline6);
+
+      #endregion
+      #region Record
+
+ 
+      context.Records.Add(record);
+
+      #endregion
+      #region Continent
+
+  
+      context.Continents.Add(continent);
+
+      #endregion
+      #region Country
+
+   
+      context.Countries.Add(country1);
+      context.Countries.Add(country2);
+
+      #endregion
+      #region Region
+
+   
+      context.Regions.Add(region1);
+      context.Regions.Add(region2);
+      context.Regions.Add(region3);
+      context.Regions.Add(region4);
+      context.Regions.Add(region5);
+
+      #endregion
+      #region Location
+     
+      context.Locations.Add(location1);
+      context.Locations.Add(location2);
+      context.Locations.Add(location3);
+      context.Locations.Add(location4);
+      context.Locations.Add(location5);
+      context.Locations.Add(location6);
+      context.Locations.Add(location7);
+      context.Locations.Add(location8);
+      context.Locations.Add(location9);
+      context.Locations.Add(location10);
+      context.Locations.Add(location11);
+      context.Locations.Add(location12);
+      context.Locations.Add(location13);
+      context.Locations.Add(location14);
+      context.Locations.Add(location15);
+      context.Locations.Add(location16);
+      context.Locations.Add(location17);
+      context.Locations.Add(location18);
+      context.Locations.Add(location19);
+      context.Locations.Add(location20);
+      context.Locations.Add(location21);
+      context.Locations.Add(location22);
+      context.Locations.Add(location23);
+      context.Locations.Add(location24);
+      context.Locations.Add(location25);
+      context.Locations.Add(location26);
+      context.Locations.Add(location27);
+      context.Locations.Add(location28);
+      context.Locations.Add(location29);
+
+      #endregion
+      #region Advertisement
+
+     
+      context.Advertisements.Add(advertisement1);
+      context.Advertisements.Add(advertisement2);
+
+      #endregion
+      #region Representative
+
+   
+      context.Representatives.Add(representative1);
+      context.Representatives.Add(representative2);
+
+      #endregion
+      #region NSF
+
+     
+      context.NSFs.Add(nsf1);
+      context.NSFs.Add(nsf2);
+
+      #endregion
+      #region School
+
+    
+      context.Schools.Add(school1);
+      context.Schools.Add(school2);
+
+      #endregion
+      #region Coordinatior
+
+    
+      context.CoachCoordinators.Add(coordinator1);
+      context.CoachCoordinators.Add(coordinator2);
+
+      #endregion
+      #region Coach
+
+     
+      context.CoachCoordinators.Add(coach1);
+      context.CoachCoordinators.Add(coach2);
+      context.CoachCoordinators.Add(coach3);
+      context.CoachCoordinators.Add(coach4);
+
+      #endregion
+      #region Team
+  
+      context.Teams.Add(team1);
+      context.Teams.Add(team2);
+      context.Teams.Add(team3);
+      context.Teams.Add(team4);
+
+      #endregion
+      #region Student
+
+      context.Students.Add(student11);
+      context.Students.Add(student12);
+      context.Students.Add(student13);
+      context.Students.Add(student14);
+
+      context.Students.Add(student21);
+      context.Students.Add(student22);
+      context.Students.Add(student23);
+      context.Students.Add(student24);
+
+      context.Students.Add(student31);
+      context.Students.Add(student32);
+      context.Students.Add(student33);
+      context.Students.Add(student34);
+
+      context.Students.Add(student41);
+      context.Students.Add(student42);
+      context.Students.Add(student43);
+      context.Students.Add(student44);
+
+      #endregion
+      #region Subscription
+
+   
+      context.Subscriptions.Add(subscription1);
+      context.Subscriptions.Add(subscription2);
+      context.Subscriptions.Add(subscription3);
+      context.Subscriptions.Add(subscription4);
+      context.Subscriptions.Add(subscription5);
+      context.Subscriptions.Add(subscription6);
+
+      #endregion
+      #region Meeting
+
+    
+      context.Meetings.Add(meeting1);
+      context.Meetings.Add(meeting2);
+      context.Meetings.Add(meeting3);
+
+      #endregion
+      #region Event
+
+   
+      context.Events.Add(event1);
+      context.Events.Add(event2);
+      context.Events.Add(event3);
+      context.Events.Add(event4);
+      context.Events.Add(event5);
+      context.Events.Add(event6);
+      context.Events.Add(event7);
+      context.Events.Add(event8);
+      context.Events.Add(event9);
+
+      #endregion
+      #region Result
+
+      
+      context.Results.Add(result1);
+      context.Results.Add(result2);
+      context.Results.Add(result3);
+      context.Results.Add(result4);
+      context.Results.Add(result5);
+      context.Results.Add(result6);
+      context.Results.Add(result7);
+      context.Results.Add(result8);
+      context.Results.Add(result9);
+      context.Results.Add(result10);
+      context.Results.Add(result11);
+      context.Results.Add(result12);
+      context.Results.Add(result13);
+      context.Results.Add(result14);
+      context.Results.Add(result15);
+      context.Results.Add(result16);
+      context.Results.Add(result17);
+      context.Results.Add(result18);
+
+      #endregion
+
 
 
       /*

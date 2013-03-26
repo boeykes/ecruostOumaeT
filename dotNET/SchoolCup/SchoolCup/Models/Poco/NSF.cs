@@ -13,7 +13,7 @@ namespace SchoolCup.Models.POCO
     public String FaxNumber { get; set; }
     public int YearOfMembership { get; set; }
 
-    public int RepresentativeId { get; set; }
+    public int? RepresentativeId { get; set; }
     public virtual Representative Representative { get; set; }
     public int LocationId { get; set; }
     public virtual Location Location { get; set; }

@@ -17,7 +17,7 @@ namespace SchoolCup.Models.POCO
 
     public int DisciplineId { get; set; }
     public virtual Discipline Discipline { get; set; }
-    public int LocationId { get; set; }
+    public int? LocationId { get; set; }
     public virtual Location Location { get; set; }
   }
 }

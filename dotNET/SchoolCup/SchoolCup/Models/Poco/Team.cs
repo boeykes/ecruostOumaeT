@@ -14,7 +14,7 @@ namespace SchoolCup.Models.POCO
 
     public int SchoolId { get; set; }
     public virtual School School { get; set; }
-    public int CoachCoordinatorId { get; set; }
+    public int? CoachCoordinatorId { get; set; }
     public virtual CoachCoordinator CoachCoordinator { get; set; }
     public virtual List<Student> Students { get; set; }
     public virtual List<Subscription> Subscriptions { get; set; }

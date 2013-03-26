@@ -15,7 +15,7 @@ namespace SchoolCup.Models.POCO
     public virtual List<Advertisement> Advertisements { get; set; }
     public virtual List<NSF> NFSs { get; set; }
     public virtual List<Record> Records { get; set; }
-    public int LocationId { get; set; }
+    public int? LocationId { get; set; }
     public virtual Location Location { get; set; }
   }
 }

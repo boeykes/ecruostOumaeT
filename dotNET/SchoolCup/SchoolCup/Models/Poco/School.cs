@@ -21,7 +21,7 @@ namespace SchoolCup.Models.POCO
     public virtual Region Region { get; set; }
     public virtual List<Student> Students { get; set; }
     public virtual List<Team> Teams { get; set; }
-    public int CoachCoordinatorId { get; set; }                           //voor coordinator
+    public int? CoachCoordinatorId { get; set; }                           //voor coordinator
     public virtual CoachCoordinator CoachCoordinator { get; set; }                //voor coach
     public virtual List<CoachCoordinator> CoachCoordinators { get; set; }
   }
