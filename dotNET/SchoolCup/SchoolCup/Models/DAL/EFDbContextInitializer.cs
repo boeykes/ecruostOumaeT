@@ -138,30 +138,30 @@ namespace SchoolCup.Models.DAL
       #region School
 
       School school1 = new School {Name = "KdG Groenplaats",WebsiteURL = "http://www.kdg.be", EMail = "info@kdg.be",Phone = "037701285", 
-        Students = new List<Student>(), Teams = new List<Team>()};
+        Students = new List<Student>(), Teams = new List<Team>(), CoachCoordinators = new List<CoachCoordinator>()};
       School school2 = new School { Name = "KU Leuven", WebsiteURL = "http://www.kuleuven.be/kuleuven/", EMail = "info@kuleuven.be", Phone = "075149621", 
-        Students = new List<Student>(), Teams = new List<Team>()};
+        Students = new List<Student>(), Teams = new List<Team>(), CoachCoordinators = new List<CoachCoordinator>()};
       
 
       #endregion
-      #region Coordinatior
+      #region Coordinator
 
-      CoachCoordinator coordinator1 = new CoachCoordinator { Name = "coordinator1", Phone = "0345872318", EMail = "coordinator1@school1.be", Mobile = "0425123548", 
+      CoachCoordinator coordinator1 = new CoachCoordinator { Name = "coordinator1",isCoordinator = true, Phone = "0345872318", EMail = "coordinator1@school1.be", Mobile = "0425123548", 
         Schools = new List<School>(), Teams = new List<Team>()};
-      CoachCoordinator coordinator2 = new CoachCoordinator { Name = "coordinator2", Phone = "0345876254", EMail = "coordinator2@school2.be", Mobile = "0412578965",
+      CoachCoordinator coordinator2 = new CoachCoordinator { Name = "coordinator2",isCoordinator = true, Phone = "0345876254", EMail = "coordinator2@school2.be", Mobile = "0412578965",
         Schools = new List<School>(), Teams = new List<Team>()};
       
 
       #endregion
       #region Coach
 
-      CoachCoordinator coach1 = new CoachCoordinator { Name = "coach1", Phone = "034578621", EMail = "coach1@school1.be", Mobile = "0423548521", 
+      CoachCoordinator coach1 = new CoachCoordinator { Name = "coach1",isCoordinator = false, Phone = "034578621", EMail = "coach1@school1.be", Mobile = "0423548521", 
         Schools = new List<School>(), Teams = new List<Team>()};
-      CoachCoordinator coach2 = new CoachCoordinator { Name = "coach2", Phone = "035412365", EMail = "coach2@school1.be", Mobile = "0412547896", 
+      CoachCoordinator coach2 = new CoachCoordinator { Name = "coach2",isCoordinator = false, Phone = "035412365", EMail = "coach2@school1.be", Mobile = "0412547896", 
         Schools = new List<School>(), Teams = new List<Team>()};
-      CoachCoordinator coach3 = new CoachCoordinator { Name = "coach3", Phone = "032147896", EMail = "coach3@school1.be", Mobile = "0445621305", 
+      CoachCoordinator coach3 = new CoachCoordinator { Name = "coach3",isCoordinator = false, Phone = "032147896", EMail = "coach3@school1.be", Mobile = "0445621305", 
         Schools = new List<School>(), Teams = new List<Team>() };
-      CoachCoordinator coach4 = new CoachCoordinator { Name = "coach4", Phone = "032564789", EMail = "coach4@school2.be", Mobile = "0423451489", 
+      CoachCoordinator coach4 = new CoachCoordinator { Name = "coach4",isCoordinator = false, Phone = "032564789", EMail = "coach4@school2.be", Mobile = "0423451489", 
         Schools = new List<School>(), Teams = new List<Team>() };
     
       #endregion
@@ -269,7 +269,6 @@ namespace SchoolCup.Models.DAL
      
 
       #endregion
-
 
       
       /*
@@ -474,15 +473,15 @@ namespace SchoolCup.Models.DAL
       school2.Location = location5;
 
       //School -> coordinator
-      school1.CoachCoordinator = coordinator1;
-      school2.CoachCoordinator = coordinator2;
+      school1.CoachCoordinators.Add(coordinator1);
+      school2.CoachCoordinators.Add(coordinator2);
 
       //School -> coach
-      school1.CoachCoordinator = coach1;
-      school1.CoachCoordinator = coach2;
-      school1.CoachCoordinator = coach3;
-      school2.CoachCoordinator = coach3;
-      school2.CoachCoordinator = coach4;
+      school1.CoachCoordinators.Add(coach1);
+      school1.CoachCoordinators.Add(coach2);
+      school1.CoachCoordinators.Add(coach3);
+      school2.CoachCoordinators.Add(coach3);
+      school2.CoachCoordinators.Add(coach4);
 
       //School -> Team
       school1.Teams.Add(team1);
@@ -516,8 +515,8 @@ namespace SchoolCup.Models.DAL
       coordinator2.Location = location6;
 
       //Coordinator -> School
-      coordinator1.School = school1;
-      coordinator2.School = school2;
+      coordinator1.Schools.Add(school1);
+      coordinator2.Schools.Add(school2);
 
       #endregion
       #region Coach
@@ -529,11 +528,11 @@ namespace SchoolCup.Models.DAL
       coach4.Location = location10;
 
       //Coach -> school
-      coach1.School = school1;
-      coach2.School = school1;
-      coach3.School = school1;
-      coach3.School = school2;
-      coach4.School = school2;
+      coach1.Schools.Add(school1);
+      coach2.Schools.Add(school1);
+      coach3.Schools.Add(school1);
+      coach3.Schools.Add(school1);
+      coach4.Schools.Add(school2);
 
       //Coach -> team
       coach1.Teams.Add(team1);
@@ -840,7 +839,6 @@ namespace SchoolCup.Models.DAL
 
       #endregion
 
-
       /*
        * ==========================================
        * Saving to context
@@ -853,7 +851,7 @@ namespace SchoolCup.Models.DAL
 
       #endregion
       #region Sport
-  
+
       context.Sports.Add(athletiek);
       context.Sports.Add(swimming);
 
@@ -870,26 +868,26 @@ namespace SchoolCup.Models.DAL
       #endregion
       #region Record
 
- 
+
       context.Records.Add(record);
 
       #endregion
       #region Continent
 
-  
+
       context.Continents.Add(continent);
 
       #endregion
       #region Country
 
-   
+
       context.Countries.Add(country1);
       context.Countries.Add(country2);
 
       #endregion
       #region Region
 
-   
+
       context.Regions.Add(region1);
       context.Regions.Add(region2);
       context.Regions.Add(region3);
@@ -898,7 +896,7 @@ namespace SchoolCup.Models.DAL
 
       #endregion
       #region Location
-     
+
       context.Locations.Add(location1);
       context.Locations.Add(location2);
       context.Locations.Add(location3);
@@ -932,42 +930,42 @@ namespace SchoolCup.Models.DAL
       #endregion
       #region Advertisement
 
-     
+
       context.Advertisements.Add(advertisement1);
       context.Advertisements.Add(advertisement2);
 
       #endregion
       #region Representative
 
-   
+
       context.Representatives.Add(representative1);
       context.Representatives.Add(representative2);
 
       #endregion
       #region NSF
 
-     
+
       context.NSFs.Add(nsf1);
       context.NSFs.Add(nsf2);
 
       #endregion
       #region School
 
-    
+
       context.Schools.Add(school1);
       context.Schools.Add(school2);
 
       #endregion
       #region Coordinatior
 
-    
+
       context.CoachCoordinators.Add(coordinator1);
       context.CoachCoordinators.Add(coordinator2);
 
       #endregion
       #region Coach
 
-     
+
       context.CoachCoordinators.Add(coach1);
       context.CoachCoordinators.Add(coach2);
       context.CoachCoordinators.Add(coach3);
@@ -975,7 +973,7 @@ namespace SchoolCup.Models.DAL
 
       #endregion
       #region Team
-  
+
       context.Teams.Add(team1);
       context.Teams.Add(team2);
       context.Teams.Add(team3);
@@ -1007,7 +1005,7 @@ namespace SchoolCup.Models.DAL
       #endregion
       #region Subscription
 
-   
+
       context.Subscriptions.Add(subscription1);
       context.Subscriptions.Add(subscription2);
       context.Subscriptions.Add(subscription3);
@@ -1018,7 +1016,7 @@ namespace SchoolCup.Models.DAL
       #endregion
       #region Meeting
 
-    
+
       context.Meetings.Add(meeting1);
       context.Meetings.Add(meeting2);
       context.Meetings.Add(meeting3);
@@ -1026,7 +1024,7 @@ namespace SchoolCup.Models.DAL
       #endregion
       #region Event
 
-   
+
       context.Events.Add(event1);
       context.Events.Add(event2);
       context.Events.Add(event3);
@@ -1040,7 +1038,7 @@ namespace SchoolCup.Models.DAL
       #endregion
       #region Result
 
-      
+
       context.Results.Add(result1);
       context.Results.Add(result2);
       context.Results.Add(result3);
@@ -1061,7 +1059,6 @@ namespace SchoolCup.Models.DAL
       context.Results.Add(result18);
 
       #endregion
-
 
 
       /*
