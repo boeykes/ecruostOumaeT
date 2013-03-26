@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="bb92093f-ec9e-41c2-85c2-d562d8bee093" name="Default" comment="" />
     <ignored path="project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -9,11 +8,6 @@
     <file path="$PROJECT_DIR$/../../TI1/webtechnologie/personalhealthcoach/css/css" changelist="bb92093f-ec9e-41c2-85c2-d562d8bee093" time="1364285800437" ignored="false" />
     <file path="/css" changelist="bb92093f-ec9e-41c2-85c2-d562d8bee093" time="1364285777236" ignored="false" />
     <file path="/css.css" changelist="bb92093f-ec9e-41c2-85c2-d562d8bee093" time="1364288184839" ignored="false" />
-=======
-    <list default="true" id="1024438d-8549-46fa-b188-5474acf6fe4c" name="Default" comment="" />
-    <ignored path="layout.iws" />
-    <ignored path=".idea/workspace.xml" />
->>>>>>> layout
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +23,6 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-<<<<<<< HEAD
     <favorites_list name="project" />
   </component>
   <component name="FileEditorManager">
@@ -56,16 +49,6 @@
         <entry file="file://$PROJECT_DIR$/css.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="35" column="144" selection-start="611" selection-end="611" vertical-scroll-proportion="0.54121864">
-=======
-    <favorites_list name="layout" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="layout.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/layout.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="33" selection-start="273" selection-end="273" vertical-scroll-proportion="0.2826087">
->>>>>>> layout
               <folding />
             </state>
           </provider>
@@ -78,7 +61,6 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
-<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -92,12 +74,6 @@
     <option name="y" value="10" />
     <option name="width" value="1900" />
     <option name="height" value="1040" />
-=======
-  <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1394" />
-    <option name="height" value="860" />
->>>>>>> layout
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -130,29 +106,17 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="project" />
-=======
-              <option name="myItemId" value="layout" />
->>>>>>> layout
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="project" />
-=======
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
->>>>>>> layout
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -162,7 +126,6 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-<<<<<<< HEAD
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../GitHub/ecruostOumaeT/layout" />
@@ -206,50 +169,27 @@
         <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.layout.html" />
       </list>
     </recent_temporary>
-=======
-  </component>
-  <component name="RunManager">
-    <list size="0" />
->>>>>>> layout
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-<<<<<<< HEAD
       <changelist id="bb92093f-ec9e-41c2-85c2-d562d8bee093" name="Default" comment="" />
       <created>1364285122212</created>
       <updated>1364285122212</updated>
-=======
-      <changelist id="1024438d-8549-46fa-b188-5474acf6fe4c" name="Default" comment="" />
-      <created>1364288895054</created>
-      <updated>1364288895054</updated>
->>>>>>> layout
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
     <frame x="10" y="10" width="1900" height="1040" extended-state="0" />
     <editor active="true" />
-=======
-    <frame x="0" y="22" width="1394" height="860" extended-state="0" />
-    <editor active="false" />
->>>>>>> layout
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959655" sideWeight="0.67048055" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993135" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32951945" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-=======
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24945295" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
->>>>>>> layout
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -324,7 +264,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state line="32" column="32" selection-start="1251" selection-end="1251" vertical-scroll-proportion="-15.5">
           <folding />
         </state>
@@ -340,9 +279,6 @@
     <entry file="file://$PROJECT_DIR$/css.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="144" selection-start="611" selection-end="611" vertical-scroll-proportion="0.54121864">
-=======
-        <state line="13" column="33" selection-start="273" selection-end="273" vertical-scroll-proportion="0.2826087">
->>>>>>> layout
           <folding />
         </state>
       </provider>
