@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: white;
 }
 
 #wrappertop{
@@ -12,18 +12,23 @@ body{
     width : 960px;
     margin-left: auto;
     margin-right: auto;
-    background-color: yellow;
+    background-color: white;
     margin-top: 36px;
-    height: 500px;
+    background-image:url('striped_lens.png');
+    background-repeat:repeat;
 }
 
 #footer{
     width: 960px;
+    text-align: center;
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
-    background-color: yellow;
+    background-color: white;
     height: 20px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
 }
 
 #headerimg{
@@ -46,20 +51,23 @@ ul li{
     float:left;
     width: 137.57px;}
 
-li ul{display:none}
+li ul{
+    display:none ;
+    margin-left: 0px;
+}
 
 ul li a{
     display:block;
     margin-right:2px;
     text-decoration:none;
     color:#ffffff;
-    border-top:1px solid #B75963;
+    border-top:1px solid #3c1053;
     padding: 5px 15px 5px 15px;
 
     background:#7D2677;
     white-space:nowrap}
 
-ul li a:hover{background:#985963;color:inherit}
+ul li a:hover{background: #6e3298;color:inherit}
 
 li:hover ul{
     display:block;
@@ -67,9 +75,9 @@ li:hover ul{
 li:hover li{
     font-size:70%;
     clear:left;
-    width:137.6px;}
-li:hover a{ background:#985963;color:inherit}
-li:hover li a:hover{background:#B75963;color:inherit}
+    width:137.57px;}
+li:hover a{ background:#7D2677;color:inherit}
+li:hover li a:hover{background: #6e3298;color:inherit}
 .clear_all{clear:both;height:0.5em;}
 
 #content{
