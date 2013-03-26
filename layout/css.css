@@ -20,15 +20,14 @@ body{
 
 #footer{
     width: 960px;
-    text-align: center;
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    padding-left: 5px;
+    background-color: #7D2677;
     height: 20px;
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
+
+    color: #ffffff;
 }
 
 #header{
@@ -155,4 +154,15 @@ li:hover li a:hover{background: #6e3298;color:inherit}
 
 #content{
     padding : 10px 10px 10px 10px;
+}
+
+#ads{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+    height: 120px;
+    padding-left: 5px;
+    color: #ffffff;
+    margin-top: -15px;
 }
