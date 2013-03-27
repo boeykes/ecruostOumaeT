@@ -1,5 +1,5 @@
 body{
-    background-color: #F0F0F0;
+   background-color: #DEDEDE;
 }
 
 #wrappertop{
@@ -14,7 +14,7 @@ body{
     margin-right: auto;
     background-color: white;
     margin-top: 36px;
-    background-image:url('striped_lens.png');
+    background-image:url('Images/body2.png');
     background-repeat:repeat;
 }
 
@@ -25,14 +25,14 @@ body{
     margin-right: auto;
     padding-left: 5px;
     background-color: #7D2677;
-    height: 20px;
+    height: 22px;
 
     color: #ffffff;
 }
 
 #header{
     height: 150px;
-    background-image:url("./Images/banner1.png");
+    background-image:url("./Images/banner.gif");
     background-size:100% 100%;
     background-repeat:no-repeat;
 }
@@ -114,14 +114,14 @@ ul{
     margin:0;
     padding:0;
     list-style:none ;
-    margin-left:-1px;
+    margin-left:0px;
     margin-right:-2px;
 }
 ul li{
     display:block;
     position:relative;
     float:left;
-    width: 137.57px;}
+    width: 137.4px;}
 
 li ul{
     display:none ;
@@ -147,7 +147,7 @@ li:hover ul{
 li:hover li{
     font-size:70%;
     clear:left;
-    width:137.57px;}
+    width:137.4px;}
 li:hover a{ background:#7D2677;color:inherit}
 li:hover li a:hover{background: #6e3298;color:inherit}
 .clear_all{clear:both;height:0.5em;}
@@ -165,4 +165,13 @@ li:hover li a:hover{background: #6e3298;color:inherit}
     padding-left: 5px;
     color: #ffffff;
     margin-top: -15px;
+}
+
+#footer iframe{
+    vertical-align: middle;
+}
+
+#footer span{
+     float: right;
+    margin-right: 5px;
 }

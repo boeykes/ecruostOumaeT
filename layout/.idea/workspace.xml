@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/layout.html" line="14" mnemonic="3" />
+    <bookmark url="file://$PROJECT_DIR$/layout.html" line="15" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c34065b-d0fd-4122-86bb-f479ca6d6315" name="Default" comment="" />
     <ignored path="&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/layout.html" changelist="7c34065b-d0fd-4122-86bb-f479ca6d6315" time="1364315030944" ignored="false" />
-    <file path="/css.css" changelist="7c34065b-d0fd-4122-86bb-f479ca6d6315" time="1364315238033" ignored="false" />
+    <file path="/layout.html" changelist="7c34065b-d0fd-4122-86bb-f479ca6d6315" time="1364395960949" ignored="false" />
+    <file path="/css.css" changelist="7c34065b-d0fd-4122-86bb-f479ca6d6315" time="1364398389787" ignored="false" />
     <file path="/testdropdown.html" changelist="7c34065b-d0fd-4122-86bb-f479ca6d6315" time="1364290143172" ignored="false" />
     <file path="$PROJECT_DIR$/../../../philip/TI1/webtechnologie/personalhealthcoach/history.html" changelist="7c34065b-d0fd-4122-86bb-f479ca6d6315" time="1364303901125" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,7 +33,7 @@
       <file leaf-file-name="css.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="162" column="32" selection-start="2629" selection-end="2629" vertical-scroll-proportion="0.8045977">
+            <state line="1" column="28" selection-start="34" selection-end="34" vertical-scroll-proportion="0.022222223">
               <folding />
             </state>
           </provider>
@@ -42,8 +42,10 @@
       <file leaf-file-name="layout.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="73" selection-start="4848" selection-end="4848" vertical-scroll-proportion="-23.461538">
-              <folding />
+            <state line="81" column="67" selection-start="4551" selection-end="4551" vertical-scroll-proportion="-23.25">
+              <folding>
+                <element signature="n#style#0;n#iframe#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,10 +78,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="y" value="22" />
+    <option name="width" value="1395" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -107,7 +108,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -128,6 +128,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -162,13 +163,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1395" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12651555" sideWeight="0.670068" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1260933" sideWeight="0.670068" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -247,7 +248,9 @@
     <entry file="file://$PROJECT_DIR$/layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -268,7 +271,9 @@
     <entry file="file://$PROJECT_DIR$/layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="4" selection-start="182" selection-end="203" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -282,7 +287,9 @@
     <entry file="file://$PROJECT_DIR$/layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="19" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -296,7 +303,9 @@
     <entry file="file://$PROJECT_DIR$/layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="19" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -310,7 +319,9 @@
     <entry file="file://$PROJECT_DIR$/layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="19" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -338,14 +349,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="73" selection-start="4848" selection-end="4848" vertical-scroll-proportion="-23.461538">
-          <folding />
+        <state line="81" column="67" selection-start="4551" selection-end="4551" vertical-scroll-proportion="-23.25">
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="32" selection-start="2629" selection-end="2629" vertical-scroll-proportion="0.8045977">
+        <state line="1" column="28" selection-start="34" selection-end="34" vertical-scroll-proportion="0.022222223">
           <folding />
         </state>
       </provider>
