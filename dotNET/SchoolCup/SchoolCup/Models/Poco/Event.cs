@@ -10,7 +10,7 @@ namespace SchoolCup.Models.POCO
     public int EventId { get; set; }
     public Boolean SchoolCupEvent { get; set; }
 
-    public int DisciplineId { get; set; }
+    public int? DisciplineId { get; set; }
     public virtual Discipline Discipline { get; set; }
     public virtual List<Result> Results { get; set; }
   }

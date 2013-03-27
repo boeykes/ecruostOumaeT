@@ -15,7 +15,7 @@ namespace SchoolCup.Models.POCO
 
     public int? RepresentativeId { get; set; }
     public virtual Representative Representative { get; set; }
-    public int LocationId { get; set; }
+    public int? LocationId { get; set; }
     public virtual Location Location { get; set; }
     public virtual List<Region> Regions { get; set; }
     public virtual List<School> Schools { get; set; }

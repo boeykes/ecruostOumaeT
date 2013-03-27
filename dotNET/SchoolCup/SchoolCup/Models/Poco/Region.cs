@@ -12,7 +12,7 @@ namespace SchoolCup.Models.POCO
 
     public virtual List<Meeting> Meetings { get; set; }
     public virtual List<School> Schools { get; set; }
-    public int CountryId { get; set; }
+    public int? CountryId { get; set; }
     public virtual Country Country { get; set; }
   }
 }

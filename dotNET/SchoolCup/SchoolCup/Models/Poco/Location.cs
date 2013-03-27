@@ -13,9 +13,9 @@ namespace SchoolCup.Models.POCO
     public String ZipCode { get; set; }
     public String City { get; set; }
    
-    public int CountryId { get; set; }
+    public int? CountryId { get; set; }
     public virtual Country Country { get; set; }
-    public int RegionId { get; set; }
+    public int? RegionId { get; set; }
     public virtual Region Region { get; set; }
   }
 }

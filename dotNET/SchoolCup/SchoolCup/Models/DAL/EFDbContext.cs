@@ -13,7 +13,7 @@ namespace SchoolCup.Models.DAL
   {
 
     public EFDbContext()
-      : base("Kdg_Schoolcup_Version01")
+      : base("Kdg_Schoolcup_Version02")
     {
     }
  
@@ -42,11 +42,10 @@ namespace SchoolCup.Models.DAL
     {
       modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
       modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
-     /* modelBuilder.Entity<Meeting>()
-        .HasRequired(s => s.Student)
-        .WithMany(m => m.Meetings)
-        .HasForeignKey(s => s.StudentId)
-        .WillCascadeOnDelete(false);*/
+      modelBuilder.Entity<NSF>().HasMany(r => r.Regions).WithMany();
+      modelBuilder.Entity<Advertisement>().HasMany(c => c.Continents).WithMany();
+      modelBuilder.Entity<Advertisement>().HasMany(c => c.Countries).WithMany();
+
     }
   }
 }

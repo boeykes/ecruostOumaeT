@@ -10,9 +10,9 @@ namespace SchoolCup.Models.POCO
     public int SubscriptionId { get; set; }
     public DateTime Date { get; set; }
 
-    public int TeamId { get; set; }
+    public int? TeamId { get; set; }
     public virtual Team Team { get; set; }
-    public int MeetingId { get; set; }
+    public int? MeetingId { get; set; }
     public virtual Meeting Meeting { get; set; }
   }
 }

@@ -13,7 +13,7 @@ namespace SchoolCup.Models.POCO
     public DateTime EndDate { get; set; }
     public String LogoURL { get; set; }
 
-    public int ISFId { get; set; }
+    public int? ISFId { get; set; }
     public virtual ISF ISF { get; set; }
     public virtual List<Continent> Continents { get; set; }
     public virtual List<Country> Countries { get; set; }

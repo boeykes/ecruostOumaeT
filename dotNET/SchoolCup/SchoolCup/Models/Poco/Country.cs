@@ -11,7 +11,7 @@ namespace SchoolCup.Models.POCO
     public String Name { get; set; }
 
     public virtual List<Region> Regions { get; set; }
-    public int ContinentId { get; set; }
+    public int? ContinentId { get; set; }
     public virtual Continent Continent { get; set; }
   }
 }

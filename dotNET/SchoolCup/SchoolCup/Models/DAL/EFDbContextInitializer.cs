@@ -176,7 +176,7 @@ namespace SchoolCup.Models.DAL
       #region Student
 
       Student student11 = new Student { Name = "student11", DateOfBirth = new DateTime(1993, 04, 25), Gender = 'M', EMail = "student11@student.school1.be", 
-       Teams = new List<Team>() };
+       Teams = new List<Team>(), Meetings = new List<Meeting>(), Results = new List<Result>()};
       Student student12 = new Student { Name = "student12", DateOfBirth = new DateTime(1993, 04, 25), Gender = 'M', EMail = "student12@student.school1.be", 
         Teams = new List<Team>() };
       Student student13 = new Student { Name = "student13", DateOfBirth = new DateTime(1993, 05, 05), Gender = 'M', EMail = "student13@student.school1.be", 
@@ -230,7 +230,7 @@ namespace SchoolCup.Models.DAL
       Meeting meeting1 = new Meeting{Name = "meeting1", Date = new DateTime(2013,02,20), Events = new List<Event>(), Subscriptions = new List<Subscription>()};
       Meeting meeting2 = new Meeting { Name = "meeting2", Date = new DateTime(2013, 02, 21), Events = new List<Event>(), Subscriptions = new List<Subscription>() };
       Meeting meeting3 = new Meeting { Name = "meeting3", Date = new DateTime(2013, 02, 22), Events = new List<Event>(), Subscriptions = new List<Subscription>() };
-     
+      Meeting meeting4 = new Meeting { Name = "meeting4Training", Date = new DateTime(2013, 02, 23), Events = new List<Event>(), Subscriptions = new List<Subscription>() };    //Trainingsmeeting
 
       #endregion
       #region Event
@@ -244,6 +244,8 @@ namespace SchoolCup.Models.DAL
       Event event7 = new Event { SchoolCupEvent = false, Results = new List<Result>() };
       Event event8 = new Event { SchoolCupEvent = false, Results = new List<Result>() };
       Event event9 = new Event { SchoolCupEvent = false, Results = new List<Result>() };
+      Event event10 = new Event { SchoolCupEvent = false, Results = new List<Result>() }; //TrainingsEvent
+      Event event11 = new Event { SchoolCupEvent = false, Results = new List<Result>() }; //TrainingsEvent
      
       #endregion
       #region Result
@@ -266,7 +268,8 @@ namespace SchoolCup.Models.DAL
       Result result16 = new Result { TimeDistance = 22.3, Points = 74 };
       Result result17 = new Result { TimeDistance = 22.4, Points = 75 };
       Result result18 = new Result { TimeDistance = 22.5, Points = 76 };
-     
+      Result result19 = new Result { TimeDistance = 22.5, Points = 76 }; //TrainingsResult
+      Result result20 = new Result { TimeDistance = 22.5, Points = 76 }; //TrainingsResult
 
       #endregion
 
@@ -430,13 +433,13 @@ namespace SchoolCup.Models.DAL
       swimming.Disciplines.Add(discipline5);
       swimming.Disciplines.Add(discipline6);
 
-      //Sport -> Team
+     //Sport -> Team
 
       athletiek.Teams.Add(team1);
       athletiek.Teams.Add(team4);
       swimming.Teams.Add(team2);
       swimming.Teams.Add(team3);
-
+      
       #endregion
       #region Discipline
 
@@ -457,7 +460,7 @@ namespace SchoolCup.Models.DAL
       //record -> location
       record.Location = location4;
 
-      #endregion
+      #endregion*/
       #region School
 
       //School -> NSF
@@ -506,14 +509,14 @@ namespace SchoolCup.Models.DAL
       school2.Students.Add(student42);
       school2.Students.Add(student43);
       school2.Students.Add(student44);
-
+      
       #endregion
       #region Coordinator
 
       //Coordinator -> Location
       coordinator1.Location = location5;
       coordinator2.Location = location6;
-
+      
       //Coordinator -> School
       coordinator1.Schools.Add(school1);
       coordinator2.Schools.Add(school2);
@@ -539,7 +542,7 @@ namespace SchoolCup.Models.DAL
       coach2.Teams.Add(team2);
       coach3.Teams.Add(team3);
       coach4.Teams.Add(team4);
-
+      
       #endregion
       #region Team
 
@@ -583,7 +586,7 @@ namespace SchoolCup.Models.DAL
       team3.Subscriptions.Add(subscription4);
       team4.Subscriptions.Add(subscription5);
       team4.Subscriptions.Add(subscription6);
-
+      
       //Team -> results
       team1.Results.Add(result1);
       team1.Results.Add(result2);
@@ -661,10 +664,11 @@ namespace SchoolCup.Models.DAL
       student44.Location = location26;
 
       //Student -> Meeting
-      //Er zijn geen studenten die trainingsmeetings hebben.
+      student11.Meetings.Add(meeting4); //trainingsmeeting
 
       //Student -> Result
-      //Er zijn geen studenten die trainingsmeetings hebben.
+      student11.Results.Add(result19);  //trainingsmeeting
+      student11.Results.Add(result20);  //trainingsmeeting
 
       //Student -> Team
       student11.Teams.Add(team1);
@@ -686,10 +690,10 @@ namespace SchoolCup.Models.DAL
       student42.Teams.Add(team4);
       student43.Teams.Add(team4);
       student44.Teams.Add(team4);
-
+      
       #endregion
       #region Subscription
-
+      
       //Subscription -> Team 
       subscription1.Team = team1;
       subscription2.Team = team1;
@@ -697,7 +701,7 @@ namespace SchoolCup.Models.DAL
       subscription4.Team = team3;
       subscription5.Team = team4;
       subscription6.Team = team4;
-
+      
       //Subscription -> Meeting
       subscription1.Meeting = meeting1;
       subscription2.Meeting = meeting2;
@@ -740,9 +744,12 @@ namespace SchoolCup.Models.DAL
       meeting3.Events.Add(event5);
       meeting3.Events.Add(event6);
 
-      //Meeting -> Student
-      //Er zijn geen studenten die trainingsmeetings hebben.
+      meeting4.Events.Add(event10); //Trainingsmeeting
+      meeting4.Events.Add(event11); //trainingsmeeting
 
+      //Meeting -> Student
+      meeting4.Student = student11;
+      
       #endregion
       #region Event
 
@@ -756,6 +763,8 @@ namespace SchoolCup.Models.DAL
       event7.Discipline = discipline1;
       event8.Discipline = discipline2;
       event9.Discipline = discipline3;
+      event10.Discipline = discipline1; //trainingsmeeting
+      event11.Discipline = discipline2; //trainingsmeeting
 
       //Event -> Result
       event1.Results.Add(result1);  //team1
@@ -776,12 +785,11 @@ namespace SchoolCup.Models.DAL
       event8.Results.Add(result17); //team4
       event9.Results.Add(result6);  //team1
       event9.Results.Add(result18); //team4
-
+      event10.Results.Add(result19);//Traingingsmeeting student11
+      event11.Results.Add(result20);//Traingingsmeeting student11
+      
       #endregion
       #region Result
-
-      //Result -> Student
-      //Er zijn geen studenten die trainingsmeetings hebben.
 
       //Result -> Team
       result1.Team = team1;
@@ -800,7 +808,7 @@ namespace SchoolCup.Models.DAL
       result14.Team = team4;
       result15.Team = team4;
       result16.Team = team4;
-      result17.Team = team4;
+      result17.Team = team4;  
       result18.Team = team4;
 
       //Result -> Event
@@ -823,7 +831,13 @@ namespace SchoolCup.Models.DAL
       result16.Event = event7;
       result17.Event = event8;
       result18.Event = event9;
+      result19.Event = event10; //trainingsmeeting
+      result20.Event = event11; //trainingsmeeting
 
+      //Result -> Student
+      result19.Student = student11; //trainingsmeeting
+      result20.Student = student11; //trainingsmeeting
+      
       #endregion
       #region Advertisement
 
@@ -1020,6 +1034,7 @@ namespace SchoolCup.Models.DAL
       context.Meetings.Add(meeting1);
       context.Meetings.Add(meeting2);
       context.Meetings.Add(meeting3);
+      context.Meetings.Add(meeting4); //trainingsmeeting
 
       #endregion
       #region Event
@@ -1034,6 +1049,8 @@ namespace SchoolCup.Models.DAL
       context.Events.Add(event7);
       context.Events.Add(event8);
       context.Events.Add(event9);
+      context.Events.Add(event10);  //trainingsmeeting
+      context.Events.Add(event11);  //trainingsmeeting
 
       #endregion
       #region Result
@@ -1057,6 +1074,8 @@ namespace SchoolCup.Models.DAL
       context.Results.Add(result16);
       context.Results.Add(result17);
       context.Results.Add(result18);
+      context.Results.Add(result19);  //trainingsmeeting
+      context.Results.Add(result20);  //trainingsmeeting
 
       #endregion
 

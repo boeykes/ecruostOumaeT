@@ -15,9 +15,9 @@ namespace SchoolCup.Models.POCO
     public DateTime Date { get; set; }
     public String AlbumURL { get; set; }
 
-    public int RegionId { get; set; }
+    public int? RegionId { get; set; }
     public virtual Region Region { get; set; }
-    public int LocationId { get; set; }
+    public int? LocationId { get; set; }
     public virtual Location Location { get; set; }
 
     public int? StudentId { get; set; }

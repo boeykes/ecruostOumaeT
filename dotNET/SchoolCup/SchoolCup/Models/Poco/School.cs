@@ -13,11 +13,11 @@ namespace SchoolCup.Models.POCO
     public String EMail { get; set; }
     public String WebsiteURL { get; set; }
 
-    public int LocationId { get; set; }
+    public int? LocationId { get; set; }
     public virtual Location Location { get; set; }
-    public int NSFId { get; set; }
+    public int? NSFId { get; set; }
     public virtual NSF NSF { get; set; }
-    public int RegionId { get; set; }
+    public int? RegionId { get; set; }
     public virtual Region Region { get; set; }
     public virtual List<Student> Students { get; set; }
     public virtual List<Team> Teams { get; set; }           
