@@ -1,7 +1,9 @@
 package com.kdg.SchoolCup;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,12 +15,15 @@ import android.os.Bundle;
 public class SettingsActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Initialize SharedPreferences
+        SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
+        String theme = settings.getString("pref_theme", "");
+
         // Set application theme
-        String theme = "light";
         if (theme.equals("light")) {
             setTheme(android.R.style.Theme_Holo_Light);
         } else {
-            setTheme(android.R.style.Theme_Black);
+            setTheme(android.R.style.Theme_Holo);
         }
 
         super.onCreate(savedInstanceState);

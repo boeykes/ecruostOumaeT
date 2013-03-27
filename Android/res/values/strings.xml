@@ -12,13 +12,19 @@
     <string name="menu_results">Results</string>
 
     <!-- Menu options -->
+    <string name="options_login">Login</string>
     <string name="options_new_event">New event</string>
+    <string name="options_profile">Profile</string>
     <string name="options_settings">Settings</string>
     <string name="options_help">Help</string>
 
-    <!-- Layout setting -->
-    <string name="pref_layout">Self destruct</string>
-    <string name="pref_layout_summ">This option is secret</string>
+    <!-- Self destruct setting -->
+    <string name="pref_destruct">Self destruct</string>
+    <string name="pref_destruct_summ">This option is dangerous!</string>
+
+    <!-- Splash screen setting -->
+    <string name="pref_splash">Disable splash screen</string>
+    <string name="pref_splash_summ">Disables the splash screen</string>
 
     <!-- Theme setting -->
     <string name="pref_theme">Theme</string>
@@ -31,4 +37,19 @@
     <string name="pref_lang_summ">Change the application\'s language</string>
     <string name="pref_lang_default">en</string>
     <string name="pref_lang_dialogtitle">Select your language</string>
+
+    <!-- Home tab -->
+    <string name="home_homepage_header">Homepage</string>
+    <string name="home_homepage">Info about upcoming events</string>
+    <string name="home_top10_schools_header">Top 10 Schools</string>
+    <string name="home_top10_schools">1. KDG\n2. Artesis\n3. UAntwerpen\n4. SLPL\n5. KLA\n6. Sint-Maarten\n7. Carolus\n8. KA Beveren\n9. Berkenboom\n10. PTS Boom</string>
+    <string name="home_top3_athletics_header">Top 3 Athletics 100m</string>
+    <string name="home_top3_athletics">1. KDG\n2. Artesis\n3. UAntwerpen</string>
+    <string name="home_top3_swimming_header">Top 3 Swimming 100m</string>
+    <string name="home_top3_swimming">1. KDG\n2. Artesis\n3. UAntwerpen</string>
+
+    <string name="home_username">Username</string>
+    <string name="home_password">Password</string>
+    <string name="home_login">Login</string>
+    <string name="home_ads">Ads</string>
 </resources>

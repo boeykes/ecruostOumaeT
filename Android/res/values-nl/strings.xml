@@ -12,13 +12,15 @@
     <string name="menu_results">Resultaten</string>
 
     <!-- Menu options -->
+    <string name="options_login">Aanmelden</string>
     <string name="options_new_event">Nieuw event</string>
+    <string name="options_profile">Profiel</string>
     <string name="options_settings">Instellingen</string>
     <string name="options_help">Help</string>
 
-    <!-- Layout setting -->
-    <string name="pref_layout">Self destruct</string>
-    <string name="pref_layout_summ">Deze optie is geheim</string>
+    <!-- Splash screen setting -->
+    <string name="pref_splash">Welkomstscherm weergeven</string>
+    <string name="pref_splash_summ">Schakelt het welkomstscherm uit</string>
 
     <!-- Theme setting -->
     <string name="pref_theme">Thema</string>

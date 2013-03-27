@@ -3,19 +3,26 @@ package com.kdg.SchoolCup;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
 public class MainActivity extends Activity {
+    public static Activity activity;
     /**
      * Called when the activity is first created.
      */
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        activity = this;
+        // Initialize SharedPreferences
+        SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
+        String theme = settings.getString("pref_theme", "");
+
         // Set application theme
-        String theme = "light";
         if (theme.equals("light")) {
             setTheme(android.R.style.Theme_Holo_Light);
         } else {
@@ -69,6 +76,18 @@ public class MainActivity extends Activity {
             int savedIndex = savedInstanceState.getInt("SAVED_INDEX");
             getActionBar().setSelectedNavigationItem(savedIndex);
         }
+
+        /*
+        ViewPager mViewPager;
+        mViewPager.setOnPageChangeListener(
+                new ViewPager.SimpleOnPageChangeListener() {
+                    @Override
+                    public void onPageSelected(int position) {
+                        // When swiping between pages, select the
+                        // corresponding tab.
+                        getActionBar().setSelectedNavigationItem(position);
+                    }
+                });  */
     }
 
     // Options menu
@@ -79,11 +98,15 @@ public class MainActivity extends Activity {
         return true;
     }
 
-    // Handle item selection
+    // Handle options item selection
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.login:
+                return true;
             case R.id.new_event:
+                return true;
+            case R.id.profile:
                 return true;
             case R.id.settings:
                 startActivity(new Intent(this, SettingsActivity.class));
