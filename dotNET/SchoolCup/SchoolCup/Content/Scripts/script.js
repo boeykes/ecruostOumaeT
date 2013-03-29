@@ -10,7 +10,7 @@ function init(){
     logos = document.getElementsByClassName('ads');
     for(var i = 0; i<logos.length; i++){
         advertismentObjects[i] = new Advertisements(logos[i]);
-        logos[i].style.top = 50 + "px";
+        logos[i].style.top = 100 + "px";
         logos[i].style.left = 960 + "px";
     }
 
@@ -51,7 +51,7 @@ function initAdvertisementObject(adv){
     adv.timerTwee = null;
     adv.timerDrie = null;
     adv.aantalPixelsLeft = 960;
-    adv.aantalPixelsTop = 50;
+    adv.aantalPixelsTop = 100;
     adv.arcGemaakt = false;
     adv.rotationAngle = 0;
     adv.omhoog =true;
@@ -83,7 +83,7 @@ function moveLeft(adv){
 }
 
 function makeArc(adv){
-    if(adv.aantalPixelsTop <= 1){
+    if(adv.aantalPixelsTop <= 51){
         adv.omhoog = false;
     }
     if(adv.omhoog){
@@ -92,7 +92,7 @@ function makeArc(adv){
         if(adv.rotationAngle < 10){
             adv.rotationAngle++;
         }
-    }else if(adv.aantalPixelsTop <= 125){
+    }else if(adv.aantalPixelsTop <= 175){
         adv.aantalPixelsTop+=2;
         adv.aantalPixelsLeft-=1,5;
         if(adv.rotationAngle >-10){
@@ -113,9 +113,9 @@ function makeArc(adv){
 }
 
 function doSwimming(adv){
-    if(adv.aantalPixelsTop > 120 && adv.omhoog){
+    if(adv.aantalPixelsTop > 170 && adv.omhoog){
         adv.aantalPixelsTop--;
-    }else if(adv.aantalPixelsTop < 135 && !adv.omhoog){
+    }else if(adv.aantalPixelsTop < 185 && !adv.omhoog){
         adv.aantalPixelsTop++;
     }else{
         adv.omhoog = !adv.omhoog;

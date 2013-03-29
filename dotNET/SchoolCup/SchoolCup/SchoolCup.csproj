@@ -241,6 +241,7 @@
     <Content Include="Content\Images\light_wool.png" />
     <Content Include="Content\Images\subtle_dots.png" />
     <Content Include="Content\Images\zwembad.png" />
+    <Content Include="Content\Images\zwembad2.png" />
     <Content Include="Content\Scripts\js.js" />
     <Content Include="Content\Scripts\script.js" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />

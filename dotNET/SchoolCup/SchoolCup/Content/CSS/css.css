@@ -2,6 +2,7 @@ body{
     background-color: #d7c6e2;
     font-family: Arial;
     font-size: 15px;
+    z-index: 0;
 }
 
 #wrappertop{
@@ -12,7 +13,7 @@ body{
 
 #wrapper{
     width : 960px;
-    margin-top: 32px;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     background-color:  #D7C6E2; 
@@ -31,6 +32,9 @@ body{
     background-image:url('../Images/contentbg.png');
     background-repeat:repeat;
     min-height: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 4px #7D2677;
+    z-index: 0;
 }
 
 

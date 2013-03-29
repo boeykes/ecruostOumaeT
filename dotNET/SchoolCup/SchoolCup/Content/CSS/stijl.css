@@ -1,13 +1,16 @@
 #advertisements{
     position: relative;
     width: 960px;
-    height: 200px;
-    background-image: url(../Images/zwembad.png);
-    overflow: hidden;
+    height: 250px;
+    background-image: url(../Images/zwembad2.png);
+    margin-top: -80px;
+    overflow-x: hidden;
+    
 }
 
 .ads{
     position: absolute;
     width: 200px;
     height: 50px;
+    overflow-y: visible;
 }
