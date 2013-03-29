@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -20,7 +21,9 @@ namespace SchoolCup.Models.POCO
     public int? RegionId { get; set; }
     public virtual Region Region { get; set; }
     public virtual List<Student> Students { get; set; }
-    public virtual List<Team> Teams { get; set; }           
-    public virtual List<CoachCoordinator> CoachCoordinators { get; set; } //verzameling van de coaches + de coordinator
+    public virtual List<Team> Teams { get; set; }
+    public virtual List<CoachCoordinator> Coaches { get; set; }
+    public int? CoordinatorId { get; set; }
+    public virtual CoachCoordinator Coordinator { get; set; }
   }
 }

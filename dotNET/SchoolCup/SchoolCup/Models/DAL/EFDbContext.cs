@@ -45,7 +45,8 @@ namespace SchoolCup.Models.DAL
       modelBuilder.Entity<NSF>().HasMany(r => r.Regions).WithMany();
       modelBuilder.Entity<Advertisement>().HasMany(c => c.Continents).WithMany();
       modelBuilder.Entity<Advertisement>().HasMany(c => c.Countries).WithMany();
-
+      modelBuilder.Entity<School>().HasOptional(c => c.Coordinator).WithOptionalDependent(c => c.School);
+      modelBuilder.Entity<School>().HasMany(c => c.Coaches).WithMany(c => c.Schools);
     }
   }
 }

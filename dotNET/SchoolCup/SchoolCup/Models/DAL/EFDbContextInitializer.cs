@@ -138,30 +138,33 @@ namespace SchoolCup.Models.DAL
       #region School
 
       School school1 = new School {Name = "KdG Groenplaats",WebsiteURL = "http://www.kdg.be", EMail = "info@kdg.be",Phone = "037701285", 
-        Students = new List<Student>(), Teams = new List<Team>(), CoachCoordinators = new List<CoachCoordinator>()};
-      School school2 = new School { Name = "KU Leuven", WebsiteURL = "http://www.kuleuven.be/kuleuven/", EMail = "info@kuleuven.be", Phone = "075149621", 
-        Students = new List<Student>(), Teams = new List<Team>(), CoachCoordinators = new List<CoachCoordinator>()};
+        Students = new List<Student>(), Teams = new List<Team>(), Coaches = new List<CoachCoordinator>()};
+      School school2 = new School { Name = "KU Leuven", WebsiteURL = "http://www.kuleuven.be/kuleuven/", EMail = "info@kuleuven.be", Phone = "075149621",
+                                    Students = new List<Student>(),
+                                    Teams = new List<Team>(),
+                                    Coaches = new List<CoachCoordinator>()
+      };
       
 
       #endregion
       #region Coordinator
 
-      CoachCoordinator coordinator1 = new CoachCoordinator { Name = "coordinator1",isCoordinator = true, Phone = "0345872318", EMail = "coordinator1@school1.be", Mobile = "0425123548", 
+      CoachCoordinator coordinator1 = new CoachCoordinator { Name = "coordinator1", Phone = "0345872318", EMail = "coordinator1@school1.be", Mobile = "0425123548", 
         Schools = new List<School>(), Teams = new List<Team>()};
-      CoachCoordinator coordinator2 = new CoachCoordinator { Name = "coordinator2",isCoordinator = true, Phone = "0345876254", EMail = "coordinator2@school2.be", Mobile = "0412578965",
+      CoachCoordinator coordinator2 = new CoachCoordinator { Name = "coordinator2", Phone = "0345876254", EMail = "coordinator2@school2.be", Mobile = "0412578965",
         Schools = new List<School>(), Teams = new List<Team>()};
       
 
       #endregion
       #region Coach
 
-      CoachCoordinator coach1 = new CoachCoordinator { Name = "coach1",isCoordinator = false, Phone = "034578621", EMail = "coach1@school1.be", Mobile = "0423548521", 
+      CoachCoordinator coach1 = new CoachCoordinator { Name = "coach1", Phone = "034578621", EMail = "coach1@school1.be", Mobile = "0423548521", 
         Schools = new List<School>(), Teams = new List<Team>()};
-      CoachCoordinator coach2 = new CoachCoordinator { Name = "coach2",isCoordinator = false, Phone = "035412365", EMail = "coach2@school1.be", Mobile = "0412547896", 
+      CoachCoordinator coach2 = new CoachCoordinator { Name = "coach2", Phone = "035412365", EMail = "coach2@school1.be", Mobile = "0412547896", 
         Schools = new List<School>(), Teams = new List<Team>()};
-      CoachCoordinator coach3 = new CoachCoordinator { Name = "coach3",isCoordinator = false, Phone = "032147896", EMail = "coach3@school1.be", Mobile = "0445621305", 
+      CoachCoordinator coach3 = new CoachCoordinator { Name = "coach3", Phone = "032147896", EMail = "coach3@school1.be", Mobile = "0445621305", 
         Schools = new List<School>(), Teams = new List<Team>() };
-      CoachCoordinator coach4 = new CoachCoordinator { Name = "coach4",isCoordinator = false, Phone = "032564789", EMail = "coach4@school2.be", Mobile = "0423451489", 
+      CoachCoordinator coach4 = new CoachCoordinator { Name = "coach4", Phone = "032564789", EMail = "coach4@school2.be", Mobile = "0423451489", 
         Schools = new List<School>(), Teams = new List<Team>() };
     
       #endregion
@@ -476,15 +479,15 @@ namespace SchoolCup.Models.DAL
       school2.Location = location5;
 
       //School -> coordinator
-      school1.CoachCoordinators.Add(coordinator1);
-      school2.CoachCoordinators.Add(coordinator2);
+      school1.Coordinator = coordinator1;
+      school2.Coordinator = coordinator2;
 
       //School -> coach
-      school1.CoachCoordinators.Add(coach1);
-      school1.CoachCoordinators.Add(coach2);
-      school1.CoachCoordinators.Add(coach3);
-      school2.CoachCoordinators.Add(coach3);
-      school2.CoachCoordinators.Add(coach4);
+      school1.Coaches.Add(coach1);
+      school1.Coaches.Add(coach2);
+      school1.Coaches.Add(coach3);
+      school2.Coaches.Add(coach3);
+      school2.Coaches.Add(coach4);
 
       //School -> Team
       school1.Teams.Add(team1);
@@ -518,8 +521,10 @@ namespace SchoolCup.Models.DAL
       coordinator2.Location = location6;
       
       //Coordinator -> School
-      coordinator1.Schools.Add(school1);
-      coordinator2.Schools.Add(school2);
+      coordinator1.School = school1;
+      coordinator2.School = school2;
+
+
 
       #endregion
       #region Coach
