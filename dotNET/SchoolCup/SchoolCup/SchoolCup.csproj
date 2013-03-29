@@ -110,6 +110,7 @@
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Helpers\ActivePage.cs" />
     <Compile Include="Models\DAL\EFDbContext.cs" />
     <Compile Include="Models\DAL\EFDbContextInitializer.cs" />
     <Compile Include="Models\POCO\Advertisement.cs" />

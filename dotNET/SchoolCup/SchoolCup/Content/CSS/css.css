@@ -21,7 +21,7 @@ body{
 #header{
     height: 150px;
     background-color: #D7C6E2;
-    background-image:url("../Images/banner.gif");
+    background-image:url("../Images/bannersWithFade2.gif");
     background-size:100% 100%;
     background-repeat:no-repeat;
 }
@@ -186,6 +186,11 @@ body{
 #wrappertop li:hover li a:hover {
     background: #6e3298;
     color: inherit;
+}
+
+.active a{
+    background: #6e3298 !important;
+    color: inherit !important;
 }
 
 .clear_all {

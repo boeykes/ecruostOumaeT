@@ -1,4 +1,4 @@
-﻿@using System.Web.UI.WebControls
+﻿@using SchoolCup
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,19 +14,26 @@
 
     <div id="wrappertop">
     <div id="header">
-        <div id="loginPane">
+
+        @if (Request.IsAuthenticated)
+        {
+            <div id="loggedInPane">
+                <img alt="gebruiker" src="logo%20isf.jpg">
+                Welcome @User.Identity.Name
+                <a href="">Change Profile</a>
+                <a href="">Manage Results</a>
+                <a href="">Log Out</a>
+            </div>
+        }
+        else
+        {
+                   <div id="loginPane">
             <input type="text" VALUE="Login" name="name"  onblur="onBlur(this)" onfocus="onFocus(this)">
-            <input type="password" VALUE="Password" name="password"  onblur="onBlur(this)" onfocus="onFocus(this)">
-            <button onclick="location.href='@Url.Action("index", "Account")'">Login</button>
+            <input type="text" VALUE="Password" name="password"  onblur="onBlur(this)" onfocus="onFocus(this)">
+            <button>Login</button>
             <a href="" >?</a>
-        </div>
-        <!--<div id="loggedInPane">-->
-            <!--<img alt="gebruiker" src="logo%20isf.jpg">-->
-            <!--Welcome Jos-->
-            <!--<a href="">Change Profile</a>-->
-            <!--<a href="">Manage Results</a>-->
-            <!--<a href="">Log Out</a>-->
-        <!--</div>-->
+        </div> 
+        }
         <div id="languageSearch">
             <select>
                 <option value="volvo">Language</option>
@@ -41,7 +48,7 @@
     
 
     <ul id="navigatie">
-        <li><a href="/">Home</a></li>
+        @Html.MenuItem("Home", "Index", "Home")
         <li><a href="/MySchoolCup">My School Cup</a></li>
         <li><a href="/Meetings">Meetings</a></li>
         <li><a href="/Schools">Schools</a></li>
@@ -64,19 +71,19 @@
     </ul>
     </div>
     <div id=wrapper>
-    <div id="content">
+        <div id="content">
         
-        @RenderBody()
+            @RenderBody()
        
-    </div>
+        </div>
 
-    <div id="ads">
-<h1>Advertisements</h1>
-    </div>
+        <div id="ads">
+            <h1>Advertisements</h1>
+        </div>
 
-    <div id="footer">
-        <span id="footertext"> © Team Outsource 2013        </span>
-        <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fisfsports&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;" allowTransparency="true"></iframe>  </div>
-</div
+        <div id="footer">
+            <span id="footertext"> © Team Outsource 2013        </span>
+            <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fisfsports&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;" allowTransparency="true"></iframe>  </div>
+    </div>
 </body>
 </html>
