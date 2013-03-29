@@ -1,5 +1,8 @@
 body{
-   background-color: #d7c6e2;
+    background-color: #d7c6e2;
+    font-family: Arial;
+    font-size: 25px;
+    color: green;
 }
 
 #wrappertop{
@@ -10,7 +13,7 @@ body{
 
 #wrapper{
     width : 960px;
-    margin-top: 36px;
+    margin-top: 32px;
     margin-left: auto;
     margin-right: auto;
     background-color:  #D7C6E2; 
@@ -24,6 +27,25 @@ body{
     background-repeat:no-repeat;
 }
 
+#content{
+    padding : 1px 10px 10px 10px;
+    background-image:url('../Images/contentbg.png');
+    background-repeat:repeat;
+    min-height: 400px;
+}
+
+#ads{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+    height: 120px;
+    padding-left: 5px;
+    color: #ffffff;
+    margin-top: -15px;
+}
+
+
 #footer{
     width: auto;
     height: 22px;
@@ -35,12 +57,20 @@ body{
     color: #FFFFFF;
 }
 
+#footer iframe{
+    vertical-align: middle;
+}
+
+#footer span{
+     float: right;
+    margin-right: 5px;
+}
+
 #loginPane{
     float:left;
     align : right;
     padding-top: 30px;
-    padding-left: 20px;
-    
+    padding-left: 20px; 
 }
 
 #loginPane input{
@@ -107,12 +137,13 @@ body{
     width: 30px;
 }
 
-
-
-#drop-down-menu{margin-left:20px}
+#drop-down-menu {
+    margin-left: 20px;
+}
 
 #wrappertop ul{
-    font-weight:bold;color:#ffffff;
+    font-weight:bold;
+    color:#ffffff;
     margin:0;
     padding:0;
     list-style:none ;
@@ -137,46 +168,34 @@ body{
     color:#ffffff;
     border-top:1px solid #3c1053;
     padding: 5px 15px 5px 15px;
-
     background:#7D2677;
     white-space:nowrap}
 
-#wrappertop ul li a:hover{background: #6e3298;color:inherit}
+#wrappertop ul li a:hover {
+    background: #6e3298;
+    color:inherit
+}
 
 #wrappertop li:hover ul{
     display:block;
-    position:absolute}
+    position: absolute;
+}
 #wrappertop li:hover li{
     font-size:70%;
     clear:left;
-    width:137.4px;}
-#wrappertop li:hover a{ background:#7D2677;color:inherit}
-#wrappertop li:hover li a:hover{background: #6e3298;color:inherit}
-.clear_all{clear:both;height:0.5em;}
-
-#content{
-    padding : 1px 10px 10px 10px;
-    background-image:url('../Images/contentbg.png');
-    background-repeat:repeat;
-    min-height: 400px;
+    width:137.4px;
+}
+#wrappertop li:hover a {
+     background:#7D2677;
+    color: inherit;
+}
+#wrappertop li:hover li a:hover {
+    background: #6e3298;
+    color: inherit;
 }
 
-#ads{
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: lightgray;
-    height: 120px;
-    padding-left: 5px;
-    color: #ffffff;
-    margin-top: -15px;
+.clear_all {
+    clear:both;
+    height:0.5em;
 }
 
-#footer iframe{
-    vertical-align: middle;
-}
-
-#footer span{
-     float: right;
-    margin-right: 5px;
-}
