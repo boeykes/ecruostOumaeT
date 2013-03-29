@@ -8,3 +8,8 @@ D:\KdG\Project\GitHub\ecruostOumaeT\dotNET\SchoolCup\SchoolCup\bin\SchoolCup.pdb
 D:\KdG\Project\GitHub\ecruostOumaeT\dotNET\SchoolCup\SchoolCup\obj\Debug\SchoolCup.csprojResolveAssemblyReference.cache
 D:\KdG\Project\GitHub\ecruostOumaeT\dotNET\SchoolCup\SchoolCup\obj\Debug\SchoolCup.dll
 D:\KdG\Project\GitHub\ecruostOumaeT\dotNET\SchoolCup\SchoolCup\obj\Debug\SchoolCup.pdb
+C:\Users\Thomas\Documents\GitHub\ecruostOumaeT\dotNET\SchoolCup\SchoolCup\bin\SchoolCup.dll
+C:\Users\Thomas\Documents\GitHub\ecruostOumaeT\dotNET\SchoolCup\SchoolCup\bin\SchoolCup.pdb
+C:\Users\Thomas\Documents\GitHub\ecruostOumaeT\dotNET\SchoolCup\SchoolCup\obj\Debug\SchoolCup.csprojResolveAssemblyReference.cache
+C:\Users\Thomas\Documents\GitHub\ecruostOumaeT\dotNET\SchoolCup\SchoolCup\obj\Debug\SchoolCup.dll
+C:\Users\Thomas\Documents\GitHub\ecruostOumaeT\dotNET\SchoolCup\SchoolCup\obj\Debug\SchoolCup.pdb

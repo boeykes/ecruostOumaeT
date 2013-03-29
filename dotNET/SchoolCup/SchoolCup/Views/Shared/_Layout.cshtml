@@ -9,8 +9,14 @@
     <title></title>
     <link rel="stylesheet" href="@Url.Content("~/Content/CSS/css.css")"
           type="text/css"
-            />
+        />
+    <link rel="stylesheet" href="@Url.Content("~/Content/CSS/stijl.css")"
+          type="text/css"
+        />
+    <script type="text/javascript" src="@Url.Content("~/Content/Scripts/script.js")"></script>
     <script type="text/javascript" src="@Url.Content("~/Content/Scripts/js.js")"></script>
+    
+
 
 </head>
 <body>
@@ -81,9 +87,13 @@
             @RenderSection("scripts", required: false)
         </div>
 
-        <div id="ads">
-            <h1>Advertisements</h1>
-        </div>
+       
+            <div id="advertisements">
+    <img class="ads" src="~/Content/Images/asus.png" alt="test" />
+    <img class="ads" src="~/Content/Images/switch.png" alt="test" />
+    <img class="ads" src="~/Content/Images/asus.png" alt="test" />
+</div>
+        
 
         <div id="footer">
             <span id="footertext">© Team Outsource 2013        </span>

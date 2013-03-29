@@ -1,0 +1,13 @@
+#advertisements{
+    position: relative;
+    width: 960px;
+    height: 200px;
+    background-image: url(../Images/zwembad.png);
+    overflow: hidden;
+}
+
+.ads{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+}

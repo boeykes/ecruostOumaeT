@@ -224,6 +224,10 @@
     <Content Include="bin\WebMatrix.Data.dll" />
     <Content Include="bin\WebMatrix.WebData.dll" />
     <Content Include="Content\CSS\css.css" />
+    <Content Include="Content\CSS\stijl.css" />
+    <Content Include="Content\Images\asus.png" />
+    <Content Include="Content\Images\switch.png" />
+    <Content Include="Content\Images\neger.png" />
     <Content Include="Content\Images\banner.gif" />
     <Content Include="Content\Images\banner1.png" />
     <Content Include="Content\Images\banner2.png" />
@@ -236,7 +240,9 @@
     <Content Include="Content\Images\contentbg.png" />
     <Content Include="Content\Images\light_wool.png" />
     <Content Include="Content\Images\subtle_dots.png" />
+    <Content Include="Content\Images\zwembad.png" />
     <Content Include="Content\Scripts\js.js" />
+    <Content Include="Content\Scripts\script.js" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -295,6 +301,10 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Images\.DS_Store" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Images\ad1.png" />
+    <Content Include="Images\ad2.png" />
+    <Content Include="Images\ad3.png" />
+    <Content Include="Images\zwembad.png" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
