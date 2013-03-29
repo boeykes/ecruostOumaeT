@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Html;
 
-namespace SchoolCup
+namespace SchoolCup.Helpers
 {
     public static class ActivePage
     {

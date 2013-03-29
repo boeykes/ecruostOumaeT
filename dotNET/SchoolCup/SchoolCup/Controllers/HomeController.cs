@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using SchoolCup.Models.DAL;
+using SchoolCup.Helpers;
 
 namespace SchoolCup.Controllers
 {
