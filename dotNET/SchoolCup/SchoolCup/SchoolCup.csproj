@@ -191,6 +191,7 @@
     <Compile Include="Models\Poco\Student.cs" />
     <Compile Include="Models\Poco\Subscription.cs" />
     <Compile Include="Models\Poco\Team.cs" />
+    <Compile Include="Models\UserRoles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
