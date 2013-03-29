@@ -1,5 +1,5 @@
 body{
-   background-color: #DEDEDE;
+   background-color: #d7c6e2;
 }
 
 #wrappertop{
@@ -12,14 +12,12 @@ body{
     width : 960px;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    background-color:  #d7c6e2;
     margin-top: 36px;
-    background-image:url('Images/body2.png');
-    background-repeat:repeat;
 }
 
 #footer{
-    width: 960px;
+    width: auto;
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
@@ -32,7 +30,8 @@ body{
 
 #header{
     height: 150px;
-    background-image:url("./Images/banner.gif");
+    background-color: #d7c6e2;
+    background-image:url("./Images/bannersWithFade2.gif");
     background-size:100% 100%;
     background-repeat:no-repeat;
 }
@@ -154,10 +153,12 @@ li:hover li a:hover{background: #6e3298;color:inherit}
 
 #content{
     padding : 10px 10px 10px 10px;
+    background-image:url('Images/subtle_dots.png');
+    background-repeat:repeat;
 }
 
 #ads{
-    width: 960px;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
     background-color: lightgray;
