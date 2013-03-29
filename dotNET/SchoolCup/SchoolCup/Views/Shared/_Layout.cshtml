@@ -16,69 +16,69 @@
 <body>
 
     <div id="wrappertop">
-    <div id="header">
+        <div id="header">
 
-        @if (Request.IsAuthenticated)
-        {
-            <div id="loggedInPane">
-                <img alt="gebruiker" src="logo%20isf.jpg">
-                Welcome @User.Identity.Name
-                <a href="">Change Profile</a>
-                <a href="">Manage Results</a>
-                <a href="">Log Out</a>
+            @if (Request.IsAuthenticated)
+            {
+                <div id="loggedInPane">
+                    <img alt="gebruiker" src="logo%20isf.jpg">
+                    Welcome @User.Identity.Name
+                    <a href="">Change Profile</a>
+                    <a href="">Manage Results</a>
+                    <a href="@Url.Action("LogOff","Account")">Log Out</a>
+                </div>
+            }
+            else
+            {
+                <div id="loginPane">
+                    <input type="text" value="Login" name="name" onblur="onBlur(this)" onfocus="onFocus(this)">
+                    <input type="password" value="Password" name="password" onblur="onBlur(this)" onfocus="onFocus(this)">
+                    <button onclick="location.href='@Url.Action("Login", "Account")'">Login</button>
+                    <a href="">?</a>
+                </div> 
+            }
+            <div id="languageSearch">
+                <select>
+                    <option value="volvo">Language</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <input type="text" name="search" value="Search" onblur="onBlur(this)" onfocus="onFocus(this)">
+                <button>Go</button>
             </div>
-        }
-        else
-        {
-                   <div id="loginPane">
-            <input type="text" VALUE="Login" name="name"  onblur="onBlur(this)" onfocus="onFocus(this)">
-            <input type="text" VALUE="Password" name="password"  onblur="onBlur(this)" onfocus="onFocus(this)">
-            <button>Login</button>
-            <a href="" >?</a>
-        </div> 
-        }
-        <div id="languageSearch">
-            <select>
-                <option value="volvo">Language</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-            </select>
-            <input type="text" name="search" VALUE="Search" onblur="onBlur(this)" onfocus="onFocus(this)">
-            <button>Go</button>
         </div>
-        </div>
-    
 
-    <ul id="navigatie">
-        @Html.MenuItem("Home", "Index", "Home")
-        <li><a href="/MySchoolCup">My School Cup</a></li>
-        <li><a href="/Meetings">Meetings</a></li>
-        <li><a href="/Schools">Schools</a></li>
-        <li><a href="/Photos">Photos</a></li>
-        <li><a href="/Results">Results</a></li>
-        <li><a href="/Manage">Manage</a>
-            <ul>
-                <li><a href="/Manage/Ads">Advertisement</a></li>
-                <li><a href="/Manage/Country">Country</a></li>
-                <li><a href="/Manage/Federation">Federation</a></li>
-                <li><a href="/Manage/School">School</a></li>
-                <li><a href="/Manage/Coach">Coach</a></li>
-                <li><a href="/Manage/Team">Team</a></li>
-                <li><a href="/Manage/Student">Student</a></li>
-                <li><a href="/Manage/Meeting">Meeting</a></li>
-                <li><a href="/Manage/Event">Event</a></li>
-            </ul>
-        </li>
 
-    </ul>
+        <ul id="navigatie">
+            @Html.MenuItem("Home", "Index", "Home")
+            <li><a href="/MySchoolCup">My School Cup</a></li>
+            <li><a href="/Meetings">Meetings</a></li>
+            <li><a href="/Schools">Schools</a></li>
+            <li><a href="/Photos">Photos</a></li>
+            <li><a href="/Results">Results</a></li>
+            <li><a href="/Manage">Manage</a>
+                <ul>
+                    <li><a href="/Manage/Ads">Advertisement</a></li>
+                    <li><a href="/Manage/Country">Country</a></li>
+                    <li><a href="/Manage/Federation">Federation</a></li>
+                    <li><a href="/Manage/School">School</a></li>
+                    <li><a href="/Manage/Coach">Coach</a></li>
+                    <li><a href="/Manage/Team">Team</a></li>
+                    <li><a href="/Manage/Student">Student</a></li>
+                    <li><a href="/Manage/Meeting">Meeting</a></li>
+                    <li><a href="/Manage/Event">Event</a></li>
+                </ul>
+            </li>
+
+        </ul>
     </div>
-    <div id=wrapper>
+    <div id="wrapper">
         <div id="content">
-        
+
             @RenderBody()
-         @Scripts.Render("~/bundles/jquery")
-         @RenderSection("scripts", required: false)
+            @Scripts.Render("~/bundles/jquery")
+            @RenderSection("scripts", required: false)
         </div>
 
         <div id="ads">
@@ -86,8 +86,9 @@
         </div>
 
         <div id="footer">
-            <span id="footertext"> © Team Outsource 2013        </span>
-            <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fisfsports&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;" allowTransparency="true"></iframe>  </div>
+            <span id="footertext">© Team Outsource 2013        </span>
+            <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fisfsports&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 200px; height: 21px;" allowtransparency="true"></iframe>
+        </div>
     </div>
 </body>
 </html>
