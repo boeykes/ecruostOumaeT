@@ -1,8 +1,7 @@
 body{
     background-color: #d7c6e2;
     font-family: Arial;
-    font-size: 25px;
-    color: green;
+    font-size: 15px;
 }
 
 #wrappertop{
@@ -68,7 +67,6 @@ body{
 
 #loginPane{
     float:left;
-    align : right;
     padding-top: 30px;
     padding-left: 20px; 
 }
@@ -86,7 +84,6 @@ body{
 #loggedInPane{
     width:200px;
     float:left;
-    align : right;
     padding-top: 20px;
     padding-left: 20px;
     color: white;
@@ -111,8 +108,7 @@ body{
     float: right;
     margin-right: 10px;
     position: relative; 
-    bottom: 10; 
-    right: 10;
+
     padding-top: 30px;
     padding-left: 20px;
 }
@@ -147,7 +143,6 @@ body{
     margin:0;
     padding:0;
     list-style:none ;
-    margin-left:0px;
     margin-right:-2px;
 }
 #wrappertop ul li{
@@ -158,8 +153,7 @@ body{
 
 #wrappertop li ul{
     display:none ;
-    margin-left: 0px;
-}
+    }
 
 #wrappertop ul li a{
     display:block;
