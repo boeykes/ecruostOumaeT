@@ -15,7 +15,6 @@ namespace SchoolCup.Models.DAL
     {
       /*
        * OPMERKING !
-       * - Er zijn nog geen trainingsmeetings in verwerkt.
        * - France heeft geen locaties en ook geen regions. Dit is met opzet gedaan om een mogelijke null pointer te krijgen.
        * - advertisement 1 => zichtbaar voor continent 1
        *                   => zichtbaar voor athletiek
