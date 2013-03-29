@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using System.Web.UI.WebControls
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -15,8 +16,8 @@
     <div id="header">
         <div id="loginPane">
             <input type="text" VALUE="Login" name="name"  onblur="onBlur(this)" onfocus="onFocus(this)">
-            <input type="text" VALUE="Password" name="password"  onblur="onBlur(this)" onfocus="onFocus(this)">
-            <button>Login</button>
+            <input type="password" VALUE="Password" name="password"  onblur="onBlur(this)" onfocus="onFocus(this)">
+            <button onclick="location.href='@Url.Action("index", "Account")'">Login</button>
             <a href="" >?</a>
         </div>
         <!--<div id="loggedInPane">-->
