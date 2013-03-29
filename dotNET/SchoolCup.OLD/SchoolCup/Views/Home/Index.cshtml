@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model IEnumerable<SchoolCup.Models.POCO.Country>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index-SUCCES!!!</h2>
+<ul>
+    @foreach (var country in Model)
+    { 
+        <li>@Html.ActionLink(country.Name, "Index")</li>
+       
+    }
+    <li>@Html.ActionLink("Test data initializer", "TestData", "Home")</li>
+</ul>

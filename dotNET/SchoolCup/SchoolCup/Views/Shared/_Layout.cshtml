@@ -77,7 +77,8 @@
         <div id="content">
         
             @RenderBody()
-       
+         @Scripts.Render("~/bundles/jquery")
+         @RenderSection("scripts", required: false)
         </div>
 
         <div id="ads">
